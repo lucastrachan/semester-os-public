@@ -1,0 +1,158 @@
+{
+  "textbook-mis": {
+    "alt": "Information systems textbook",
+    "category": "textbook"
+  },
+  "textbook-calc": {
+    "alt": "Calculus textbook",
+    "category": "textbook"
+  },
+  "textbook-chem": {
+    "alt": "Chemistry textbook",
+    "category": "textbook"
+  },
+  "textbook-econ": {
+    "alt": "Economics textbook",
+    "category": "textbook"
+  },
+  "textbook-stats": {
+    "alt": "Statistics textbook",
+    "category": "textbook"
+  },
+  "textbook-cs": {
+    "alt": "Computer science textbook",
+    "category": "textbook"
+  },
+  "calculator-graphing": {
+    "alt": "Graphing calculator",
+    "category": "calculator"
+  },
+  "calculator-scientific": {
+    "alt": "Scientific calculator",
+    "category": "calculator"
+  },
+  "lab-goggles": {
+    "alt": "Safety goggles for lab",
+    "category": "supplies"
+  },
+  "notebook-set": {
+    "alt": "Set of three notebooks",
+    "category": "supplies"
+  },
+  "art-supplies": {
+    "alt": "Art supplies kit",
+    "category": "supplies"
+  },
+  "mini-fridge": {
+    "alt": "Mini fridge",
+    "category": "dorm"
+  },
+  "desk-lamp": {
+    "alt": "Desk lamp",
+    "category": "dorm"
+  },
+  "microwave": {
+    "alt": "Microwave",
+    "category": "dorm"
+  },
+  "mattress-topper": {
+    "alt": "Mattress topper",
+    "category": "dorm"
+  },
+  "bike": {
+    "alt": "Campus bike",
+    "category": "dorm"
+  },
+  "monitor": {
+    "alt": "Computer monitor",
+    "category": "tech"
+  },
+  "laptop-stand": {
+    "alt": "Laptop stand",
+    "category": "tech"
+  },
+  "usb-c-hub": {
+    "alt": "USB-C hub",
+    "category": "tech"
+  },
+  "headphones": {
+    "alt": "Headphones",
+    "category": "tech"
+  },
+  "laptop": {
+    "alt": "Laptop",
+    "category": "tech"
+  },
+  "ticket-football": {
+    "alt": "Football game ticket",
+    "category": "ticket"
+  },
+  "ticket-basketball": {
+    "alt": "Basketball game ticket",
+    "category": "ticket"
+  },
+  "ticket-concert": {
+    "alt": "Concert ticket",
+    "category": "ticket"
+  },
+  "tutor-math": {
+    "alt": "Math tutoring",
+    "category": "tutoring"
+  },
+  "tutor-cs": {
+    "alt": "Computer science tutoring",
+    "category": "tutoring"
+  },
+  "tutor-business": {
+    "alt": "Business tutoring",
+    "category": "tutoring"
+  },
+  "hoodie": {
+    "alt": "Campus hoodie",
+    "category": "clothing"
+  },
+  "jersey": {
+    "alt": "Team jersey",
+    "category": "clothing"
+  },
+  "trade-swap": {
+    "alt": "Trade or swap",
+    "category": "swap"
+  },
+  "fallback-books": {
+    "alt": "Books",
+    "category": "textbook"
+  },
+  "fallback-supplies": {
+    "alt": "School supplies",
+    "category": "supplies"
+  },
+  "fallback-electronics": {
+    "alt": "Electronics",
+    "category": "tech"
+  },
+  "fallback-dorm": {
+    "alt": "Dorm gear",
+    "category": "dorm"
+  },
+  "fallback-tickets": {
+    "alt": "Tickets",
+    "category": "ticket"
+  },
+  "fallback-tutoring": {
+    "alt": "Tutoring",
+    "category": "tutoring"
+  },
+  "fallback-clothing": {
+    "alt": "Clothing",
+    "category": "clothing"
+  },
+  "fallback-rides": {
+    "alt": "Rides",
+    "category": "supplies"
+  },
+  "fallback-other": {
+    "alt": "Other items",
+    "category": "swap"
+  }
+}

@@ -1,0 +1,105 @@
+/* Semester OS slide system (Designer). 1920 x 1080 slides, dark by default, light variant for print.
+   Use: <section class="slide slide--cover"> ... </section>. Layout recipes live in layouts.html.
+   Contrast: every colour pair below was derived with the same AA rules as the app (>= 4.65:1 for text). */
+
+:root {
+  --bg: #0B0D11;  --surface: #13161C;  --surface-2: #0F1217;
+  --ink: #ECEEF3; --muted: #98A0B0;    --border: #262B35;
+  --accent: #4F46E5;        /* brand indigo: fills only (white text on it 6.3:1) */
+  --accent-ink: #FFFFFF;
+  --accent-strong: #847EED; /* accent-coloured TEXT and lines on dark (4.6:1+ on bg and surface) */
+  --accent-tint: #1F2044;
+  --ok: #5FD39A; --warn: #E8A33D; --danger: #FF8A80;
+  --font-sans: 'Inter var', Inter, 'Segoe UI', system-ui, -apple-system, Roboto, sans-serif;
+  --font-mono: ui-monospace, 'JetBrains Mono', Menlo, Consolas, monospace;
+  --margin: 120px;
+}
+/* Light variant (print, projector in bright rooms): add class "deck-light" on <body> or a section. */
+.deck-light, .slide--light {
+  --bg: #F4F5F7; --surface: #FFFFFF; --surface-2: #F9FAFB; --ink: #12151C; --muted: #586071; --border: #DDE0E7;
+  --accent-strong: #4F46E5; --accent-tint: #ECEBFC; --ok: #067647; --warn: #8A5A00; --danger: #B42318;
+}
+/* Per-class colour for ONE slide section: <section class="slide" data-theme="c2"> (amber, teal ... same tokens as the app) */
+[data-theme='c0'] { --accent: #4F46E5; --accent-ink: #FFFFFF; --accent-strong: #847EED; --accent-tint: #1F2044; }
+[data-theme='c1'] { --accent: #0D9488; --accent-ink: #10131A; --accent-strong: #2FA399; --accent-tint: #122F32; }
+[data-theme='c2'] { --accent: #D97706; --accent-ink: #10131A; --accent-strong: #DB7C10; --accent-tint: #3B2918; }
+[data-theme='c3'] { --accent: #E11D48; --accent-ink: #FFFFFF; --accent-strong: #E95878; --accent-tint: #3C1725; }
+[data-theme='c4'] { --accent: #059669; --accent-ink: #10131A; --accent-strong: #28A57E; --accent-tint: #10302B; }
+[data-theme='c5'] { --accent: #0284C7; --accent-ink: #10131A; --accent-strong: #309AD1; --accent-tint: #102C3E; }
+[data-theme='c6'] { --accent: #7C3AED; --accent-ink: #FFFFFF; --accent-strong: #A171F2; --accent-tint: #281D46; }
+[data-theme='c7'] { --accent: #EA580C; --accent-ink: #10131A; --accent-strong: #EC6924; --accent-tint: #3E2319; }
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+.slide {
+  position: relative; width: 1920px; height: 1080px; overflow: hidden;
+  padding: 96px var(--margin) 88px; display: flex; flex-direction: column; gap: 40px;
+  background: var(--bg); color: var(--ink); font-family: var(--font-sans); line-height: 1.25;
+  -webkit-font-smoothing: antialiased;
+}
+/* soft accent wash, same idea as the app */
+.slide::before { content: ''; position: absolute; inset: 0 0 auto 0; height: 520px; pointer-events: none;
+  background: radial-gradient(1200px 380px at 20% -60px, var(--accent-tint), transparent 70%); }
+.slide > * { position: relative; }
+
+/* ---- type scale (px at 1920 x 1080). Minimum body is 32px: judges read from a distance. ---- */
+.eyebrow { font-family: var(--font-mono); font-size: 28px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent-strong); font-weight: 600; }
+.title   { font-size: 88px; font-weight: 800; letter-spacing: -0.035em; line-height: 1.02; text-wrap: balance; }
+.title--xl { font-size: 128px; letter-spacing: -0.045em; line-height: 0.98; }
+.subtitle { font-size: 44px; font-weight: 500; color: var(--muted); line-height: 1.25; max-width: 1400px; }
+.body    { font-size: 36px; line-height: 1.35; }
+.body--muted { color: var(--muted); }
+.caption { font-size: 26px; color: var(--muted); }
+.mono    { font-family: var(--font-mono); }
+.big-number { font-family: var(--font-mono); font-size: 168px; font-weight: 800; letter-spacing: -0.04em; color: var(--accent-strong); line-height: 1; }
+.pill { display: inline-flex; align-items: center; gap: 12px; padding: 10px 24px; border-radius: 999px; background: var(--accent-tint); color: var(--accent-strong); font-size: 28px; font-weight: 650; }
+.pill--solid { background: var(--accent); color: var(--accent-ink); }
+.footer { position: absolute !important; left: var(--margin); right: var(--margin); bottom: 36px; display: flex; justify-content: space-between; align-items: center; font-family: var(--font-mono); font-size: 22px; color: var(--muted); }
+.footer img { height: 36px; }
+
+/* ---- layout helpers ---- */
+.grow { flex: 1 1 auto; min-height: 0; }
+.row { display: flex; gap: 48px; align-items: center; }
+.cols-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 72px; }
+.cols-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 48px; }
+.cols-5 { display: grid; grid-template-columns: repeat(5, 1fr); gap: 36px; }
+.center { align-items: center; text-align: center; justify-content: center; }
+.card { background: var(--surface); border: 2px solid var(--border); border-radius: 28px; padding: 40px 44px; }
+.card h3 { font-size: 44px; letter-spacing: -0.02em; margin-bottom: 14px; }
+.card p { font-size: 32px; color: var(--muted); }
+ul.points { list-style: none; display: flex; flex-direction: column; gap: 28px; }
+ul.points li { font-size: 40px; padding-left: 56px; position: relative; }
+ul.points li::before { content: ''; position: absolute; left: 0; top: 14px; width: 24px; height: 24px; border-radius: 8px; background: var(--accent); }
+table.map { width: 100%; border-collapse: collapse; font-size: 32px; }
+table.map th { text-align: left; color: var(--muted); font-family: var(--font-mono); font-size: 24px; letter-spacing: 0.08em; text-transform: uppercase; padding: 0 20px 16px; }
+table.map td { padding: 22px 20px; border-top: 2px solid var(--border); vertical-align: top; }
+table.map td:first-child { font-weight: 700; width: 30%; }
+
+/* ---- frames for screenshots (mirror the app's window look) ---- */
+.frame-desktop { background: var(--surface); border: 2px solid var(--border); border-radius: 28px; overflow: hidden; box-shadow: 0 40px 80px -30px rgba(0,0,0,.6); display: flex; flex-direction: column; }
+.frame-desktop .bar { display: flex; align-items: center; gap: 14px; padding: 16px 24px; background: var(--surface-2); border-bottom: 2px solid var(--border); font-family: var(--font-mono); font-size: 22px; color: var(--muted); }
+.frame-desktop .bar i { width: 16px; height: 16px; border-radius: 50%; background: var(--border); }
+.frame-desktop .bar i:first-child { background: var(--accent); }
+.frame-desktop img, .frame-desktop .shot { display: block; width: 100%; flex: 1 1 auto; object-fit: cover; object-position: top; background: var(--bg); min-height: 0; }
+.frame-phone { width: 400px; height: 820px; padding: 18px; border-radius: 64px; background: #05070A; border: 3px solid var(--border); box-shadow: 0 40px 80px -30px rgba(0,0,0,.7); position: relative; flex: none; }
+.frame-phone::before { content: ''; position: absolute; top: 28px; left: 50%; width: 120px; height: 30px; margin-left: -60px; border-radius: 20px; background: #05070A; z-index: 2; }
+.frame-phone img, .frame-phone .shot { display: block; width: 100%; height: 100%; object-fit: cover; object-position: top; border-radius: 48px; background: var(--bg); }
+
+/* ---- diagram slides (draw.io pages): the diagram sits on a light card so its own colours stay true ---- */
+.diagram { background: #F4F5F7; border-radius: 28px; padding: 28px; display: flex; align-items: center; justify-content: center; min-height: 0; }
+.diagram img, .diagram svg { max-width: 100%; max-height: 100%; }
+
+/* ---- charts: bars with direct labels, one accent, no gridlines ---- */
+.bars { display: flex; flex-direction: column; gap: 22px; }
+.bar-row { display: grid; grid-template-columns: 360px 1fr 120px; gap: 28px; align-items: center; font-size: 32px; }
+.bar-row .track { height: 36px; background: var(--surface); border-radius: 18px; overflow: hidden; }
+.bar-row .fill { height: 100%; background: var(--accent); border-radius: 18px; width: var(--value, 0%); }
+.bar-row .num { font-family: var(--font-mono); font-weight: 700; text-align: right; }
+
+.notes { display: none; } /* speaker notes live inside each slide and never print on the slide */
+@media print { .slide { page-break-after: always; } }
+
+/* empty screenshot slots show what goes there */
+.shot:empty { display: grid; place-items: center; min-height: 200px; }
+.shot:empty::after { content: 'screenshot'; font-family: var(--font-mono); font-size: 26px; color: var(--muted); }
+@page { size: 1920px 1080px; margin: 0; }
+@media print { body { -webkit-print-color-adjust: exact; print-color-adjust: exact; } }

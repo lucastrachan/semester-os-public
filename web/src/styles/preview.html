@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Semester OS style guide</title>
+  <link rel="stylesheet" href="./index.css" />
+  <style>
+    /* preview-only layout helpers */
+    .swatches { display: flex; gap: 8px; flex-wrap: wrap; }
+    .swatches button { width: 2.75rem; height: 2.75rem; border-radius: 50%; border: 2px solid var(--surface); outline: 1px solid var(--border-strong); }
+    .swatches button[aria-pressed='true'] { outline: 3px solid var(--ink); }
+  </style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-today" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></symbol>
+  <symbol id="i-agents" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M8 21h8M12 18v3M7 9l2 2-2 2M12 13h4"/></symbol>
+  <symbol id="i-cal" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></symbol>
+  <symbol id="i-books" viewBox="0 0 24 24"><path d="M4 19V5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2zM4 19a2 2 0 0 0 2 2h13"/></symbol>
+  <symbol id="i-tutor" viewBox="0 0 24 24"><path d="M2 9l10-5 10 5-10 5zM6 11.5V16c0 1.5 3 3 6 3s6-1.5 6-3v-4.5"/></symbol>
+</svg>
+
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="app-shell">
+  <header class="app-header">
+    <a class="brand" href="#">Semester <span class="brand-os">OS</span></a>
+    <span class="badge campus-chip">UA · Crimson</span>
+  </header>
+
+  <nav class="app-nav" aria-label="Primary">
+    <a class="nav-item" href="#" aria-current="page"><svg class="nav-icon"><use href="#i-today"/></svg><span class="nav-label">Today</span></a>
+    <a class="nav-item" href="#"><svg class="nav-icon"><use href="#i-agents"/></svg><span class="nav-label">Agents</span></a>
+    <a class="nav-item" href="#"><svg class="nav-icon"><use href="#i-cal"/></svg><span class="nav-label">Calendar</span></a>
+    <a class="nav-item" href="#"><svg class="nav-icon"><use href="#i-books"/></svg><span class="nav-label">Books</span></a>
+    <a class="nav-item" href="#"><svg class="nav-icon"><use href="#i-tutor"/></svg><span class="nav-label">Tutoring</span></a>
+  </nav>
+
+  <main class="app-main" id="main">
+    <div class="page">
+      <div class="page-head">
+        <span class="eyebrow">Style guide</span>
+        <h1>Theme the whole UI</h1>
+        <p>Pick a class colour. Everything below re-themes with a smooth transition and no layout shift. Pick “Campus” to restore the home theme.</p>
+        <div class="swatches" id="swatches" role="group" aria-label="Theme"></div>
+      </div>
+
+      <section>
+        <div class="section-head"><h2>Today · briefing</h2><span class="eyebrow">master agent</span></div>
+        <div class="window">
+          <div class="window-bar"><span class="window-dots"><i></i><i></i><i></i></span><span class="window-title">chief-of-staff — briefing</span><span class="badge" data-status="ready">Ready</span></div>
+          <div class="window-body briefing">
+            <p class="briefing-greeting">Good morning. Two classes today and one deadline within 48 hours.</p>
+            <div class="briefing-grid">
+              <div class="briefing-block"><h3>Classes today</h3>
+                <div class="timeline">
+                  <div class="tl-item"><span class="tl-time">09:00</span><div class="tl-block" data-theme="c0"><span class="tl-title">MIS 405 · Systems Analysis</span><span class="tl-sub">Lecture · Alston 310</span></div></div>
+                  <div class="tl-item"><span class="tl-time">11:00</span><div class="tl-block" data-kind="study" data-theme="c2"><span class="tl-title">Study: ACC 210 Exam 2</span><span class="tl-sub">Practice problems ch. 6–8</span></div></div>
+                  <div class="tl-item"><span class="tl-time">14:00</span><div class="tl-block" data-theme="c3"><span class="tl-title">BIO 101 · Cell Biology</span><span class="tl-sub">Lecture · Shelby 1000</span></div></div>
+                  <div class="tl-item"><span class="tl-time">17:00</span><div class="tl-block" data-kind="deadline" data-theme="c1"><span class="tl-title">Quiz 3 due</span><span class="tl-sub">STAT 200</span></div></div>
+                </div>
+              </div>
+              <div class="briefing-block"><h3>Priorities</h3>
+                <ol class="priority-list"><li>Finish MIS 405 case write-up</li><li>Review ACC 210 ch. 6</li><li>Pick up BIO lab manual</li></ol>
+                <div class="warning" style="margin-top:12px" role="note">Thursday has three deadlines and no study time scheduled.</div>
+              </div>
+            </div>
+            <div class="chip-row">
+              <span class="chip" data-theme="c0">MIS 405 · Quiz 3 · Fri</span>
+              <span class="chip chip-due" data-urgency="soon" data-theme="c2">ACC 210 · Exam 2 · Tomorrow</span>
+              <span class="chip chip-due" data-urgency="overdue">Overdue · 1 day</span>
+              <span class="chip-action chip">Moved Exam 2 to Nov 12</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="section-head"><h2>Agent Library</h2><span class="eyebrow">window-style cards</span></div>
+        <div class="agent-grid">
+          <article class="window agent-card" data-theme="c0">
+            <div class="agent-swatch"></div>
+            <div class="window-bar"><span class="window-dots"><i></i><i></i><i></i></span><span class="window-title">mis405.agent</span><span class="badge" data-status="ready">Ready</span></div>
+            <div class="window-body">
+              <div><div class="agent-name">MIS 405 tutor</div><div class="agent-role">Systems Analysis · Dr. Rivera</div></div>
+              <div class="knows"><div><b>6</b><span>materials</span></div><div><b>14</b><span>deadlines</span></div><div><b>3</b><span>new</span></div></div>
+              <div class="agent-meta">last Blackboard check 12 min ago</div>
+              <a class="btn-primary" href="#">Study mode</a>
+            </div>
+          </article>
+          <article class="window agent-card" data-theme="c2">
+            <div class="agent-swatch"></div>
+            <div class="window-bar"><span class="window-dots"><i></i><i></i><i></i></span><span class="window-title">acc210.agent</span><span class="badge" data-status="building">Building</span></div>
+            <div class="window-body">
+              <div><div class="agent-name">ACC 210 tutor</div><div class="agent-role">Managerial Accounting</div></div>
+              <ol class="stepper" aria-label="Build progress">
+                <li class="step" data-state="done"><span class="step-dot"></span>Read syllabus</li>
+                <li class="step" data-state="done"><span class="step-dot"></span>Extract dates</li>
+                <li class="step" data-state="running"><span class="step-dot"></span><span>Build calendar<span class="step-detail">11 of 14 items</span></span></li>
+                <li class="step" data-state="pending"><span class="step-dot"></span>Match books</li>
+                <li class="step" data-state="pending"><span class="step-dot"></span>Tutor ready</li>
+              </ol>
+            </div>
+          </article>
+          <article class="window agent-card" data-theme="c3">
+            <div class="agent-swatch"></div>
+            <div class="window-bar"><span class="window-dots"><i></i><i></i><i></i></span><span class="window-title">bio101.agent</span><span class="badge" data-status="error">Error</span></div>
+            <div class="window-body">
+              <div><div class="agent-name">BIO 101 tutor</div><div class="agent-role">Couldn’t read this PDF</div></div>
+              <p class="muted">The file looks scanned. Paste the syllabus text instead and the agent will build in seconds.</p>
+              <button class="btn-ghost">Paste text</button>
+            </div>
+          </article>
+          <aside class="window sys-panel">
+            <div class="window-bar"><span class="window-dots"><i></i><i></i><i></i></span><span class="window-title">system status</span></div>
+            <div>
+              <div class="sys-row"><span class="led" data-state="ok"></span><div><div class="sys-name">calendar-sync</div><div class="sys-detail">Blackboard feed · 2 new events</div></div><span class="sys-time">12m ago</span></div>
+              <div class="sys-row"><span class="led" data-state="busy"></span><div><div class="sys-name">planner</div><div class="sys-detail">building today’s plan…</div></div><span class="sys-time">now</span></div>
+              <div class="sys-row"><span class="led" data-state="idle"></span><div><div class="sys-name">books</div><div class="sys-detail">no new matches</div></div><span class="sys-time">1h ago</span></div>
+              <div class="sys-row"><span class="led" data-state="error"></span><div><div class="sys-name">feed-poll</div><div class="sys-detail">feed unreachable</div></div><span class="sys-time">3h ago</span></div>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section>
+        <div class="section-head"><h2>Chat · quiz · flashcard</h2></div>
+        <div class="handoff-banner" role="status"><span>Switching you to your <strong>MIS 405</strong> tutor — this is about normalization.</span><button class="btn-ghost-sm">Undo</button></div>
+        <div class="window" style="margin-top:12px">
+          <div class="window-bar"><span class="window-dots"><i></i><i></i><i></i></span><span class="window-title">tutor — explain</span>
+            <span class="segmented" role="group" aria-label="Mode"><button aria-pressed="true">Explain</button><button aria-pressed="false">Quiz</button></span></div>
+          <div class="chat">
+            <div class="chat-log">
+              <div class="msg msg-user">Why does 3NF matter for the case study?</div>
+              <div class="msg msg-agent"><div class="msg-meta">MIS 405 tutor</div>Good question. What anomaly happens if a customer’s city is stored in every order row?<div class="msg-actions chip-row"><span class="chip chip-action">Added: Case study 2, due Nov 7</span></div></div>
+              <div class="msg msg-agent" aria-label="Typing"><span class="typing"><i></i><i></i><i></i></span></div>
+            </div>
+            <form class="chat-composer"><input aria-label="Message" placeholder="Ask your tutor…" /><button class="btn-primary" type="button">Send</button></form>
+          </div>
+        </div>
+        <div class="grid" style="display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(18rem,1fr));margin-top:16px">
+          <div class="card stack">
+            <div class="quiz-progress" style="--value:40%"><i></i></div>
+            <strong>Which normal form removes transitive dependencies?</strong>
+            <div class="quiz-options">
+              <button class="quiz-option">1NF</button>
+              <button class="quiz-option" data-state="wrong">2NF</button>
+              <button class="quiz-option" data-state="correct">3NF</button>
+              <button class="quiz-option" disabled>BCNF</button>
+            </div>
+            <div class="quiz-explain">3NF removes attributes that depend on non-key attributes.</div>
+          </div>
+          <div class="stack">
+            <div class="flashcard" id="card"><div class="flashcard-inner"><div class="flashcard-face flashcard-front">Primary key</div><div class="flashcard-face flashcard-back">A minimal attribute set that uniquely identifies a row</div></div></div>
+            <div class="row"><button class="btn-ghost" onclick="document.getElementById('card').classList.toggle('is-flipped')">Flip</button><button class="btn-primary">Known</button></div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="section-head"><h2>Calendar</h2></div>
+        <div class="cal-grid" role="grid">
+          <div class="cal-dow">Sun</div><div class="cal-dow">Mon</div><div class="cal-dow">Tue</div><div class="cal-dow">Wed</div><div class="cal-dow">Thu</div><div class="cal-dow">Fri</div><div class="cal-dow">Sat</div>
+          <div class="cal-cell" data-outside="true"><span class="cal-date">28</span></div>
+          <div class="cal-cell"><span class="cal-date">1</span></div>
+          <div class="cal-cell" data-today="true"><span class="cal-date">2</span><button class="cal-event" data-theme="c0">Quiz 3</button></div>
+          <div class="cal-cell"><span class="cal-date">3</span><button class="cal-event" data-theme="c2">Exam 2</button><button class="cal-event" data-theme="c5">HW 4</button></div>
+          <div class="cal-cell"><span class="cal-date">4</span></div>
+          <div class="cal-cell"><span class="cal-date">5</span><button class="cal-event" data-theme="c7">Lab</button></div>
+          <div class="cal-cell"><span class="cal-date">6</span><button class="cal-event" data-theme="c6">Essay</button></div>
+        </div>
+      </section>
+
+      <section>
+        <div class="section-head"><h2>Books · forms · states</h2></div>
+        <div class="grid" style="display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(18rem,1fr))">
+          <div class="card book-card" data-theme="c1">
+            <div><span class="eyebrow">STAT 200 · required</span><div class="book-title">Intro to Statistical Learning</div></div>
+            <div class="listing" data-here="true"><div><strong>$32</strong> · Good · UA <span class="tag tag-demo">Demo listing</span></div><button class="btn-sm btn-primary">View</button></div>
+            <div class="listing"><div><strong>$28</strong> · Like new · Auburn</div><button class="btn-sm btn-ghost">View</button></div>
+          </div>
+          <form class="card request-form" onsubmit="return false">
+            <div class="field"><label for="n">Campus name <span class="req">*</span></label><input id="n" placeholder="University of …" /><span class="hint">Shown on the landing page</span></div>
+            <div class="field has-error"><label for="d">Email domain</label><input id="d" aria-invalid="true" value="gmail" /><span class="field-error">Use a school domain like ua.edu</span></div>
+            <label class="check"><input type="checkbox" checked /> Open to the network</label>
+            <button class="btn-primary" aria-busy="true">Saving</button>
+          </form>
+          <div class="stack">
+            <div class="empty"><div class="empty-art">∅</div><div class="empty-title">No classes yet</div><p class="empty-body">Drop a syllabus and your first class agent builds in under a minute.</p><a class="btn-primary" href="#">Add a class</a></div>
+            <div class="card stack" aria-busy="true" aria-label="Loading"><div class="skeleton-line"></div><div class="skeleton-line short"></div><div class="skeleton-block"></div></div>
+          </div>
+        </div>
+        <div class="boot" style="min-height:0;padding:24px 0">
+          <div class="window boot-window"><div class="window-bar"><span class="window-dots"><i></i><i></i><i></i></span><span class="window-title">semester-os — boot</span></div>
+            <div class="window-body"><div class="boot-lines"><div class="boot-line" style="--i:0" data-state="ok">mounting campus theme</div><div class="boot-line" style="--i:1" data-state="ok">waking chief-of-staff</div><div class="boot-line" style="--i:2" data-state="ok">loading class agents</div><div class="boot-line" style="--i:3">syncing calendar</div></div><div class="boot-bar"><i></i></div></div></div>
+        </div>
+      </section>
+    </div>
+  </main>
+</div>
+
+<div class="toast-region" aria-live="polite">
+  <div class="toast" data-kind="error" role="alert"><div><div class="toast-title">Couldn’t reach your tutor</div><div class="toast-body">Check your connection and try again.</div></div><button aria-label="Dismiss">✕</button></div>
+</div>
+
+<script>
+  const names = ['Campus','Indigo','Teal','Amber','Rose','Emerald','Sky','Violet','Orange'];
+  const hexes = ['#9E1B32','#4F46E5','#0D9488','#D97706','#E11D48','#059669','#0284C7','#7C3AED','#EA580C'];
+  const box = document.getElementById('swatches');
+  names.forEach((n,i)=>{
+    const b=document.createElement('button'); b.style.background=hexes[i]; b.title=n; b.setAttribute('aria-label',n+' theme');
+    b.setAttribute('aria-pressed', i===0 ? 'true':'false');
+    b.onclick=()=>{
+      [...box.children].forEach(x=>x.setAttribute('aria-pressed','false')); b.setAttribute('aria-pressed','true');
+      if(i===0){ document.documentElement.removeAttribute('data-theme'); } else { document.documentElement.setAttribute('data-theme','c'+(i-1)); }
+    };
+    box.appendChild(b);
+  });
+  // ?scheme=light|dark forces a scheme for screenshots (rewrites the media query in the stylesheets)
+  const sch=new URLSearchParams(location.search).get('scheme');
+  if(sch){
+    document.querySelector('link[rel=stylesheet]').remove();
+    Promise.all(['tokens','themes','base','components'].map(f=>fetch('./'+f+'.css?direct').then(r=>r.text()))).then(t=>{
+      let css=t.join('\n').replace(/@media \(prefers-color-scheme: dark\)/g, sch==='dark'?'@media all':'@media not all');
+      if(new URLSearchParams(location.search).get('motion')==='reduce') css=css.replace(/\(prefers-reduced-motion: reduce\)/g,'all').replace(/\(prefers-reduced-motion: no-preference\)/g,'not all');
+      const s=document.createElement('style'); s.textContent=css; document.head.appendChild(s);
+    });
+  }
+  const q=new URLSearchParams(location.search); if(q.get('theme')) document.documentElement.setAttribute('data-theme',q.get('theme'));
+</script>
+</body>
+</html>

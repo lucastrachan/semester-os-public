@@ -1,0 +1,7 @@
+{
+  "region": "us-east-1",
+  "adminUserPoolId": "REPLACE_WITH_STAFF_USER_POOL_ID",
+  "adminClientId": "REPLACE_WITH_STAFF_CLIENT_ID",
+  "apiUrl": "REPLACE_WITH_API_URL",
+  "_comment": "EXAMPLE ONLY. scripts/deploy.py (or deploy_admin.py) writes config.json from your own CDK stack outputs. These ids are public identifiers, never secrets."
+}

@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="1024" height="1024" role="img" aria-label="Semester OS" >
+  <title>Semester OS</title>
+  <rect width="128" height="128" fill="#4F46E5"/>
+  <circle cx="31" cy="29" r="4" fill="#FFFFFF" opacity="1.0"/><circle cx="43" cy="29" r="4" fill="#FFFFFF" opacity="0.6"/><circle cx="55" cy="29" r="4" fill="#FFFFFF" opacity="0.35"/><path d="M83 60 C83 49 74 44 63 44 C52 44 44 50 44 58 C44 68 53 70 64 72 C75 74 84 78 84 88 C84 97 75 103 64 103 C53 103 45 98 43 88" fill="none" stroke="#FFFFFF" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

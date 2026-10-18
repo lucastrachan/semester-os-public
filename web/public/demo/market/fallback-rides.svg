@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" role="img" aria-label="Rides">
+<defs><filter id="b" x="-20%" y="-50%" width="140%" height="200%"><feGaussianBlur stdDeviation="9"/></filter></defs>
+<rect width="640" height="480" fill="#FEF3C7"/>
+<circle cx="520" cy="90" r="120" fill="#FDE68A" opacity=".55"/>
+<circle cx="90" cy="420" r="90" fill="#FDE68A" opacity=".4"/>
+<ellipse cx="320" cy="412" rx="190" ry="20" fill="#0F172A" opacity=".16" filter="url(#b)"/>
+<g transform="translate(320 260) scale(1.08) translate(-320 -260)"><path d="M90 330 L120 240 Q130 208 170 204 L270 200 Q300 140 360 140 Q430 140 450 204 L520 214 Q556 222 560 270 L560 330 Z" fill="#F43F5E" /><path d="M296 204 Q316 160 358 160 Q410 160 424 204 Z" fill="#BAE6FD" /><rect x="344" y="160" width="6" height="44" rx="2" fill="#F43F5E" /><circle cx="190" cy="336" r="46" fill="#1E293B" /><circle cx="190" cy="336" r="20" fill="#CBD5E1" /><circle cx="470" cy="336" r="46" fill="#1E293B" /><circle cx="470" cy="336" r="20" fill="#CBD5E1" /><rect x="520" y="250" width="34" height="18" rx="8" fill="#FDE68A" /><rect x="96" y="258" width="30" height="16" rx="8" fill="#FCA5A5" /></g>
+</svg>

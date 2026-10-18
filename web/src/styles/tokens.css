@@ -1,0 +1,103 @@
+/* Semester OS design tokens (Designer). Spec variables first, then extras.
+   Light is the default; dark follows prefers-color-scheme. See DESIGN.md. */
+
+/* Registered so the accent family can TRANSITION when data-theme changes
+   (plain custom properties would snap). Colours only, so no layout shift. */
+@property --accent        { syntax: '<color>'; inherits: true; initial-value: #4F46E5; }
+@property --accent-ink    { syntax: '<color>'; inherits: true; initial-value: #FFFFFF; }
+@property --accent-tint   { syntax: '<color>'; inherits: true; initial-value: #ECEBFC; }
+@property --accent-strong { syntax: '<color>'; inherits: true; initial-value: #4F46E5; }
+
+:root {
+  color-scheme: light dark;
+
+  /* spec variables (neutrals) */
+  --bg: #F4F5F7;
+  --surface: #FFFFFF;
+  --ink: #12151C;
+  --muted: #586071;
+  --border: #DDE0E7;
+
+  /* spec variables (accent family; overridden by data-theme / campus theme) */
+  --accent: #4F46E5;
+  --accent-ink: #FFFFFF;
+  --accent-tint: #ECEBFC;
+  --accent-strong: #4F46E5; /* accent-coloured TEXT/lines that must pass AA */
+
+  /* extras */
+  --surface-2: #F9FAFB;       /* inset wells, window title bars */
+  --border-strong: #B9BFCC;   /* 3:1 on bg: input borders, dividers that matter */
+  --overlay: rgb(18 21 28 / 0.5);
+  --shadow-1: 0 1px 2px rgb(18 21 28 / 0.06), 0 1px 1px rgb(18 21 28 / 0.04);
+  --shadow-2: 0 8px 24px -8px rgb(18 21 28 / 0.18), 0 2px 6px rgb(18 21 28 / 0.06);
+  --shadow-3: 0 24px 48px -12px rgb(18 21 28 / 0.28);
+  --focus: var(--accent-strong);
+
+  /* type */
+  --font-sans: 'Inter var', Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: ui-monospace, 'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace;
+  --text-xs: 0.75rem;   /* 12 */
+  --text-sm: 0.8125rem; /* 13 */
+  --text-base: 0.9375rem; /* 15 */
+  --text-md: 1.0625rem; /* 17 */
+  --text-lg: 1.25rem;   /* 20 */
+  --text-xl: 1.625rem;  /* 26 */
+  --text-2xl: clamp(2rem, 1.4rem + 3vw, 3.5rem);
+
+  /* space (4px base) */
+  --s-1: 0.25rem; --s-2: 0.5rem; --s-3: 0.75rem; --s-4: 1rem;
+  --s-5: 1.5rem;  --s-6: 2rem;   --s-7: 3rem;    --s-8: 4rem;
+
+  /* shape */
+  --radius-sm: 6px; --radius: 10px; --radius-lg: 16px; --radius-pill: 999px;
+
+  /* layout */
+  --nav-h: 3.75rem;       /* bottom nav height (mobile) */
+  --rail-w: 15rem;        /* side rail width (desktop) */
+  --content-w: 64rem;
+  --safe-bottom: env(safe-area-inset-bottom, 0px);
+
+  /* motion */
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --t-fast: 120ms;
+  --t-med: 200ms;
+  --t-theme: 450ms; /* class re-theme */
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0B0D11;
+    --surface: #13161C;
+    --ink: #ECEEF3;
+    --muted: #98A0B0;
+    --border: #262B35;
+    --surface-2: #0F1217;
+    --border-strong: #4A5160;
+    --overlay: rgb(0 0 0 / 0.6);
+    --shadow-1: 0 1px 2px rgb(0 0 0 / 0.5);
+    --shadow-2: 0 8px 24px -8px rgb(0 0 0 / 0.6), 0 2px 6px rgb(0 0 0 / 0.4);
+    --shadow-3: 0 24px 48px -12px rgb(0 0 0 / 0.7);
+  }
+}
+
+/* Default (campus) accent when no tenant theme is applied yet. Same derivation as c0. */
+:root:not([data-theme]) {
+  --accent: #4F46E5; --accent-ink: #FFFFFF; --accent-tint: #ECEBFC; --accent-strong: #4F46E5;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme]) {
+    --accent-tint: #1F2044; --accent-strong: #847EED;
+  }
+}
+
+/* Only the root animates; everything reading var(--accent*) follows it. */
+:root {
+  transition:
+    --accent var(--t-theme) var(--ease),
+    --accent-ink var(--t-theme) var(--ease),
+    --accent-tint var(--t-theme) var(--ease),
+    --accent-strong var(--t-theme) var(--ease);
+}
+@media (prefers-reduced-motion: reduce) {
+  :root { transition: none; }
+}

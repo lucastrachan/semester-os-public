@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" role="img" aria-label="Other items">
+<defs><filter id="b" x="-20%" y="-50%" width="140%" height="200%"><feGaussianBlur stdDeviation="9"/></filter></defs>
+<rect width="640" height="480" fill="#E2E8F0"/>
+<circle cx="520" cy="90" r="120" fill="#CBD5E1" opacity=".55"/>
+<circle cx="90" cy="420" r="90" fill="#CBD5E1" opacity=".4"/>
+<ellipse cx="320" cy="412" rx="190" ry="20" fill="#0F172A" opacity=".16" filter="url(#b)"/>
+<g transform="translate(320 260) scale(1.08) translate(-320 -260)"><rect x="150" y="170" width="340" height="220" rx="14" fill="#D6A66B" /><rect x="150" y="170" width="340" height="52" rx="14" fill="#E7BE85" /><rect x="290" y="170" width="60" height="66" rx="4" fill="#F3D9A8" /><rect x="150" y="222" width="340" height="6" rx="0" fill="#B98748" /><path d="M170 330 H300" fill="none" stroke="#B98748" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" opacity=".6"/><circle cx="430" cy="318" r="26" fill="#fff" opacity=".8"/><path d="M418 318 l9 9 l15 -17" fill="none" stroke="#16A34A" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" /></g>
+</svg>

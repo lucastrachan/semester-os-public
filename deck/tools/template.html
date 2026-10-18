@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Semester OS pitch deck</title>
+<link rel="icon" href="assets/logo/favicon.svg">
+<link rel="stylesheet" href="deck.css">
+<style>
+html,body{margin:0;background:#05070A;height:100%;overflow:hidden}
+#stage{position:fixed;inset:0}
+#frame{width:1920px;height:1080px;transform-origin:center center;position:absolute;left:50%;top:50%}
+.slide{display:none}.slide.on{display:flex}
+#hud{position:fixed;right:14px;bottom:10px;font:13px ui-monospace,monospace;color:#98A0B0;z-index:9}
+.notes{white-space:pre-line}
+body.notesview{overflow:auto;height:auto}
+body.notesview #stage{position:static;padding:24px}
+body.notesview #frame{position:static;transform:none!important;width:auto;height:auto}
+body.notesview .slide{display:flex;transform:scale(.4);transform-origin:0 0}
+body.notesview .row-n{display:grid;grid-template-columns:780px 1fr;gap:24px;margin-bottom:24px;align-items:start}
+body.notesview .slidebox{width:768px;height:432px;overflow:hidden;position:relative;outline:1px solid #262B35}
+body.notesview .notes{display:block;color:#ECEEF3;font:20px/1.5 system-ui;background:#13161C;padding:20px;border-radius:10px}
+body.notesview #hud{display:none}
+@media print{
+ html,body{overflow:visible;height:auto;background:#fff}
+ #stage{position:static}#frame{position:static;transform:none!important;width:1920px;height:auto}
+ .slide,.slide.on{display:flex;page-break-after:always;break-after:page}
+ .slide:last-child{page-break-after:auto;break-after:auto}
+ #hud,.notes{display:none!important}
+}
+table.map.tight td{padding:13px 20px}table.map.tight td:first-child{width:30%}
+.app{display:flex;flex:1;min-height:0;background:var(--bg);font-size:26px}
+.rail{width:230px;background:var(--surface-2);border-right:2px solid var(--border);padding:24px 18px;display:flex;flex-direction:column;gap:8px;font-size:24px}
+.rail b{display:flex;align-items:center;gap:10px;font-size:26px;margin-bottom:18px}
+.rail b img{height:36px;width:36px;flex:none;border-radius:8px}
+.rail span{padding:12px 16px;border-radius:12px;color:var(--muted)}
+.rail span.on{background:var(--accent-tint);color:var(--accent-strong);font-weight:700}
+.main{flex:1;padding:28px 34px;display:flex;flex-direction:column;gap:20px;min-width:0}
+.main h4{font-size:36px;letter-spacing:-.02em}
+.sub{color:var(--muted);font-size:24px}
+.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.cc{background:var(--surface);border:2px solid var(--border);border-top:8px solid var(--accent);border-radius:20px;padding:20px;display:flex;flex-direction:column;gap:8px}
+.cc h5{font-size:30px}.cc p{font-size:22px;color:var(--muted)}
+.chip,.badge{display:inline-flex;align-items:center;padding:6px 14px;border-radius:999px;background:var(--accent-tint);color:var(--accent-strong);font-size:22px;font-weight:600;border:1px solid transparent;white-space:nowrap}
+.chip-action{background:#10302B;color:var(--ok)}
+.chip-due{background:#3B2918;color:var(--warn)}
+.chip-outline{background:transparent;color:var(--muted);border-color:#3a414e}
+.chips{display:flex;gap:10px;flex-wrap:wrap}
+.bub{padding:18px 24px;border-radius:20px;font-size:28px;max-width:80%;line-height:1.3}
+.bub.u{align-self:flex-end;background:var(--accent);color:var(--accent-ink)}
+.bub.a{background:var(--surface);border:2px solid var(--border)}
+.handoff{display:flex;align-items:center;gap:16px;padding:16px 22px;border-radius:14px;background:var(--accent-tint);border:2px solid var(--accent-strong);font-size:28px}
+.handoff strong{color:var(--accent-strong)}
+.btn{margin-left:auto;padding:8px 20px;border:2px solid var(--accent-strong);border-radius:10px;color:var(--accent-strong);font-size:24px;font-weight:600}
+.mk{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.mc{background:var(--surface);border:2px solid var(--border);border-radius:18px;padding:20px;display:flex;flex-direction:column;gap:10px}
+.mc .ph{height:90px;border-radius:12px;background:var(--surface-2);border:2px dashed var(--border);display:grid;place-items:center;color:var(--muted);font-size:20px}
+.mc h5{font-size:28px}.mc .pr{font-family:var(--font-mono);font-weight:800;font-size:30px}
+.tabs{display:flex;gap:10px}.tabs span{padding:8px 18px;border-radius:999px;border:2px solid var(--border);font-size:22px;color:var(--muted)}.tabs.slate span.on{background:#3B4252;color:#ECEEF3;border-color:#3B4252}.tabs span.on{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+.demo-tag{font:600 24px var(--font-mono);color:var(--warn);text-transform:uppercase;letter-spacing:.08em;white-space:nowrap}
+.flow{display:flex;align-items:center;gap:28px}
+.node{background:var(--surface);border:2px solid var(--border);border-radius:24px;padding:28px 34px;font-size:38px;font-weight:700;text-align:center;flex:1}
+.node small{display:block;font-size:26px;color:var(--muted);font-weight:500;margin-top:8px}
+.arr{font-size:56px;color:var(--accent-strong)}
+.st{display:inline-block;font:700 26px var(--font-mono);padding:4px 14px;border-radius:8px}
+.st.live{background:#10302B;color:var(--ok)}.st.code{background:#3B2918;color:var(--warn)}.st.plan{background:transparent;border:2px dashed var(--muted);color:var(--muted)}
+.layer{display:grid;grid-template-columns:230px 1fr;gap:24px;padding:18px 0;border-top:2px solid var(--border);font-size:30px;align-items:center}
+.layer:first-child{border-top:0}.layer b{color:var(--accent-strong)}
+</style></head>
+<body>
+<div id="stage"><div id="frame">
+
+<!-- 1 COVER -->
+<section class="slide center" style="gap:48px;justify-content:center">
+  <img src="assets/logo/semester-os-lockup-on-dark.svg" style="height:200px" alt="Semester OS">
+  <p class="subtitle" style="text-align:center">One click turns your classes into agents, and the marketplace already knows what you need.</p>
+  <div class="row">{{R:chief-of-staff:#847EED:150}}{{R:class-tutor:#2FA399:150}}{{R:class-tutor:#DB7C10:150}}{{R:class-tutor:#E95878:150}}{{R:class-tutor:#28A57E:150}}</div>
+  <div style="position:absolute;right:120px;bottom:84px;text-align:center;background:#fff;padding:0;border-radius:14px;width:180px;overflow:hidden">{{QR:180}}</div>
+  <div class="footer"><span>HackBama_01 &middot; Track 1 &middot; Multi-Campus Marketplace</span><span>Team: luca (solo)</span></div>
+  <aside class="notes">0:10. I am Luca. Semester OS turns your classes into agents, and the marketplace already knows what you need.</aside>
+</section>
+
+<!-- TEAM -->
+<section class="slide" style="justify-content:center;gap:40px">
+  <span class="eyebrow">The team</span><h1 class="title" style="font-size:96px">Just me and my Claude agents</h1>
+  <div class="row" style="flex-wrap:nowrap;gap:24px;align-items:stretch"><div class="card" style="padding:30px 24px;display:flex;flex-direction:column;align-items:center;gap:12px;text-align:center;flex:1;min-width:0"><img src="assets/logo/semester-os-mark.svg" style="height:120px" alt=""><h3 style="font-size:44px">Luca</h3><p style="font-size:28px;line-height:1.3;color:var(--muted)">Human. Team lead. Every decision.</p></div><div class="card" style="padding:30px 24px;display:flex;flex-direction:column;align-items:center;gap:12px;text-align:center;flex:1;min-width:0">{{R:planner:#847EED:120}}<h3 style="font-size:44px">Claude Planner</h3><p style="font-size:28px;line-height:1.3;color:var(--muted)">Runs the team.</p></div><div class="card" style="padding:30px 24px;display:flex;flex-direction:column;align-items:center;gap:12px;text-align:center;flex:1;min-width:0">{{R:state-building:#2FA399:120}}<h3 style="font-size:44px">Claude Builder</h3><p style="font-size:28px;line-height:1.3;color:var(--muted)">Backend and AWS.</p></div><div class="card" style="padding:30px 24px;display:flex;flex-direction:column;align-items:center;gap:12px;text-align:center;flex:1;min-width:0">{{R:base:#E95878:120}}<h3 style="font-size:44px">Claude Designer</h3><p style="font-size:28px;line-height:1.3;color:var(--muted)">The website.</p></div></div>
+  <p class="caption">Luca directed the project and made every decision; the Planner, Builder and Designer are Claude agents working in assigned areas.</p>
+  <div class="footer"><span>Team luca (solo submitter: Luca Strachan)</span><span>02</span></div>
+  <aside class="notes">0:20. Team luca is solo: me, plus three Claude agents. I made every decision; the Planner planned, the Builder built the backend, the Designer built the site.</aside>
+</section>
+
+<!-- 2 PROBLEM -->
+<section class="slide" style="justify-content:center;gap:56px">
+  <span class="eyebrow">The problem</span>
+  <h1 class="title" style="font-size:96px;max-width:1650px">Too many tools, and none of them talk</h1>
+  <p class="subtitle">One semester runs across syllabi, Blackboard, calendars and group chats.</p>
+  <div class="row" style="gap:24px"><span class="pill pill--solid" style="font-size:44px;padding:18px 36px">Scattered</span><span class="pill pill--solid" style="font-size:44px;padding:18px 36px">Manual</span><span class="pill pill--solid" style="font-size:44px;padding:18px 36px">Easy to miss</span></div>
+  <div class="footer"><span>Semester OS</span><span>03</span></div>
+  <aside class="notes">0:25. A semester lives in syllabi, Blackboard, calendars and group chats, and none of them talk. Deadlines are easy to miss and nobody tells you what you need to buy.</aside>
+</section>
+
+<!-- 3 IDEA -->
+<section class="slide" style="justify-content:center;gap:56px">
+  <span class="eyebrow">The idea</span>
+  <h1 class="title" style="font-size:112px;max-width:1650px">Your syllabus decides what you need</h1>
+  <p class="subtitle">Every other campus marketplace asks you to browse. Ours comes to you.</p>
+  <div class="flow"><div class="node">Browser helper<small>one click reads your courses and due dates</small></div><span class="arr">&rarr;</span><div class="node">Class agent<small>deadlines, memory</small></div><span class="arr">&rarr;</span><div class="node">Calendar<small>updates itself</small></div><span class="arr">&rarr;</span><div class="node">Required books<small>matched across campuses</small></div></div>
+  <div class="footer"><span>Semester OS</span><span>04</span></div>
+  <aside class="notes">0:30. Other marketplaces make you browse; here the syllabus decides what you need. Your classes become agents, a calendar that updates itself, and the books you should buy, matched across campuses.</aside>
+</section>
+
+<!-- 4 ONE CLICK -->
+<section class="slide" data-theme="c0">
+  <span class="eyebrow">Connect &middot; one click</span><h1 class="title" style="font-size:80px">Press Scan. Every class becomes an agent.</h1>
+  <div class="cols-2 grow" style="align-items:stretch;gap:56px">
+   <div style="display:flex;flex-direction:column;justify-content:center">
+    <ul class="points" style="gap:28px"><li style="font-size:44px">Reads your courses and due dates</li><li style="font-size:44px">Maps every class's folders and links</li><li style="font-size:44px">Re-scans once a day</li></ul>
+   </div>
+   <div class="frame-desktop" style="align-self:center"><div class="bar"><i></i><i></i><i></i><span>Connect your classes</span></div>
+    <div class="app" style="min-height:520px"><div class="main" style="gap:16px">
+     <div class="mc"><h5>Scanning your classes</h5><div style="height:18px;border-radius:99px;background:var(--surface-2);border:2px solid var(--border);overflow:hidden"><i style="display:block;height:100%;width:72%;background:var(--accent)"></i></div><p class="sub">72% &middot; reading due dates (5 classes)</p></div>
+     <div class="mc" style="flex-direction:row;align-items:center;gap:18px">{{R:class-tutor:#2FA399:64}}<div><h5>MIS 430 &middot; 9 deadlines</h5><p class="sub">Ready</p></div></div>
+     <div class="mc" style="flex-direction:row;align-items:center;gap:18px">{{R:class-tutor:#DB7C10:64}}<div><h5>ACC 210 &middot; 7 deadlines</h5><p class="sub">Ready</p></div></div>
+     <p class="demo-tag">Mockup &middot; demo data</p>
+    </div></div></div>
+  </div>
+  <div class="footer"><span>Semester OS</span><span>05</span></div>
+  <aside class="notes">0:40. One click: the helper reads your courses and due dates and maps each class's folders and links while you watch, never your password. A progress bar shows on the page, every class appears as an agent, and it re-scans once a day.</aside>
+</section>
+
+<!-- 6 DEMO 2 -->
+<section class="slide" data-theme="c1">
+  <div class="row" style="justify-content:space-between;align-items:flex-start"><div><span class="eyebrow">Class agents</span><h1 class="title" style="font-size:68px">An agent for every class</h1></div><span class="demo-tag">Mockup &middot; demo data</span></div>
+  <div class="frame-desktop grow"><div class="bar"><i></i><i></i><i></i><span>MIS 430 agent</span></div>
+   <div class="app">
+    <div class="rail"><b><img src="assets/logo/favicon.svg" alt="">Semester OS</b><span>Today</span><span class="on">Study</span><span>Marketplace</span><span>Calendar</span><span>Settings</span></div>
+    <div class="main">
+     <div class="tabs"><span class="on">Chat</span><span>Materials</span><span>Deadlines</span><span>Blackboard</span><span>Books</span><span>Memory</span><span>Syllabus</span></div>
+     <div class="bub u">What is due in MIS 430, and quiz me on chapter 3</div>
+     <div class="handoff">{{R:class-tutor:var(--accent-strong):56}}<span>Switched to your <strong>MIS 430</strong> agent &middot; opening in Study</span><span class="chip">Using: Lecture 4.pdf</span><span class="chip">Using: Syllabus</span><span class="btn">Undo</span></div>
+     <div class="bub a">Project 2 is due Friday and Exam 2 is in 6 days. Quick quiz: which diagram shows how data moves between processes?</div>
+     <div class="chips"><span class="chip chip-action">Added study block Thu 7 pm</span><span class="chip chip-due">Due Fri</span></div>
+    </div></div></div>
+  <div class="footer"><span>Semester OS</span><span>06</span></div>
+  <aside class="notes">0:35. Ask the general agent about a class and it hands you to the right class agent, which answers from your materials and deadlines. Answers link back to the real item with Open in Blackboard, and there are quiz and study modes.</aside>
+</section>
+
+<!-- 7 MARKETPLACE -->
+<section class="slide" data-theme="c5">
+  <div class="row" style="justify-content:space-between;align-items:flex-start"><div><span class="eyebrow">Live demo &middot; marketplace</span><h1 class="title" style="font-size:68px">A marketplace that comes to you</h1></div><span class="demo-tag">Mockup &middot; demo listings</span></div>
+  <div class="frame-desktop grow"><div class="bar"><i></i><i></i><i></i><span>Marketplace</span></div>
+   <div class="app">
+    <div class="rail"><b><img src="assets/logo/favicon.svg" alt="">Semester OS</b><span>Today</span><span>Study</span><span class="on">Marketplace</span><span>Calendar</span><span>Settings</span></div>
+    <div class="main">
+     <div class="row" style="gap:16px"><div style="flex:1;padding:18px 26px;border-radius:16px;background:var(--surface);border:2px solid var(--border);font-size:30px;color:var(--muted)">Search books, supplies, dorm gear</div><span class="btn" style="margin:0">Filters</span><span class="btn" style="margin:0;background:var(--accent);color:var(--accent-ink);border-color:var(--accent)">Sell or post something</span></div>
+     <div class="tabs"><span class="on">For sale</span><span>Tickets</span><span>Tutoring</span></div>
+     <div class="mk">
+      <div class="mc"><img src="assets/market/textbook-mis.svg" alt="" style="width:150px;height:112px;align-self:center;object-fit:cover;border-radius:12px"><span class="badge" style="align-self:flex-start">Your class: MIS 430</span><h5>Systems Analysis, 11th ed.</h5><span class="pr" style="font-size:44px">$45</span><p class="sub">Demo University &middot; Good</p></div>
+      <div class="mc"><img src="assets/market/textbook-mis.svg" alt="" style="width:150px;height:112px;align-self:center;object-fit:cover;border-radius:12px"><span class="badge" style="align-self:flex-start">Other campus</span><h5>Systems Analysis, 11th ed.</h5><span class="pr" style="font-size:44px">$38</span><p class="sub">Other campus &middot; Like new</p></div>
+      <div class="mc"><img src="assets/market/tutor-business.svg" alt="" style="width:150px;height:112px;align-self:center;object-fit:cover;border-radius:12px"><span class="badge" style="align-self:flex-start">Tutor</span><h5>MIS 430 tutor</h5><span class="pr" style="font-size:44px">$20/h</span><p class="sub">Demo University &middot; In person</p></div>
+     </div>
+     <p class="sub" style="margin-top:auto">Demo listings. Recommended for you comes from your classes. Checkout and Orders are simulated (no real money).</p>
+    </div></div></div>
+  <div class="footer"><span>Semester OS</span><span>07</span></div>
+  <aside class="notes">0:40. Three tabs: For sale, Tickets and Tutoring, with picks recommended from your classes, even from another campus. Buy now runs a simulated checkout and an Orders page; listings are demo data and are labelled.</aside>
+</section>
+
+<!-- 8 ANY CAMPUS -->
+<section class="slide">
+  <span class="eyebrow">Multi-tenant</span><h1 class="title">Any campus, instantly</h1>
+  <div class="cols-3" style="align-items:center;margin-top:10px">
+    <div><div class="big-number">{{COLORS}}</div><p class="body body--muted">schools with verified brand colours</p></div>
+    <div><div class="big-number">{{SCHOOLS}}</div><p class="body body--muted">US schools in the registry</p></div>
+    <div><div class="big-number">0</div><p class="body body--muted">lines of code to add a campus</p></div>
+  </div>
+  <div class="flow grow" style="align-items:center">
+    <div class="node" style="font-size:32px">Any .edu email<small>campus comes from the verified email</small></div><span class="arr">&rarr;</span>
+    <div class="node" style="font-size:32px">Email code<small>campus verification</small></div><span class="arr">&rarr;</span>
+    <div class="node" style="font-size:32px">Campus created<small>first student creates it (249 live)</small></div><span class="arr">&rarr;</span>
+    <div class="node" style="font-size:32px">Colours<small>verified, else detected, else safe default</small></div><span class="arr">&rarr;</span>
+    <div class="node" style="font-size:32px">Admin review<small>colour finder in the console</small></div>
+  </div>
+  <div class="footer"><span>Semester OS</span><span>08</span></div>
+  <aside class="notes">0:30. Any .edu email creates its own themed campus, and the email code is the campus verification. 249 campuses are live with brand colours, and adding one takes no code.</aside>
+</section>
+
+<!-- 9 SECURITY -->
+<section class="slide">
+  <span class="eyebrow">Trust</span><h1 class="title" style="font-size:72px">Safe by design</h1>
+  <div class="cols-2 grow" style="align-items:stretch;gap:56px">
+   <div style="display:flex;flex-direction:column;justify-content:center">
+    <div class="layer"><b>Students</b><span>Verified with a .edu email code</span></div>
+    <div class="layer"><b>Staff</b><span>Separate login with MFA</span></div>
+    <div class="layer"><b>Uploads</b><span>Untrusted input walled off from the AI</span></div>
+    <div class="layer"><b>Your data</b><span>Tools limited to your own data</span></div>
+    <div class="layer"><b>Audit log</b><span>Every staff change recorded</span></div>
+   </div>
+   <div class="frame-desktop" style="align-self:center"><div class="bar"><i></i><i></i><i></i><span>admin console &middot; separate site</span></div>
+    <div class="app" style="min-height:560px"><div class="main" style="gap:16px">
+     <div class="tabs slate"><span>Campuses</span><span class="on">Colour review</span><span>Reports</span><span>Audit</span></div>
+     <div class="mc" style="flex-direction:row;align-items:center;gap:18px"><span style="width:56px;height:56px;border-radius:12px;background:#0D9488"></span><div><h5>demo-campus.edu</h5><p class="sub">Detected colour &middot; needs review</p></div><span class="btn" style="border-color:#98A0B0;color:#ECEEF3">Approve</span></div>
+     <div class="mc" style="flex-direction:row;align-items:center;gap:18px"><span style="width:56px;height:56px;border-radius:12px;background:#7C3AED"></span><div><h5>example-u.edu</h5><p class="sub">Verified table</p></div><span class="chip chip-action">Approved</span></div>
+     <p class="demo-tag">Mockup &middot; demo data</p>
+    </div></div></div>
+  </div>
+  <div class="footer"><span>Semester OS</span><span>09</span></div>
+  <aside class="notes">0:30. Students are verified with a .edu code and staff sign in separately with MFA. Anything a student uploads is treated as untrusted and walled off from the agent's tools, which only touch your own data, and every staff change is logged.</aside>
+</section>
+
+<!-- 10 ARCHITECTURE -->
+<section class="slide">
+  <span class="eyebrow">Architecture</span><h1 class="title" style="font-size:64px">Serverless on AWS</h1>
+  <div class="diagram grow" style="padding:14px 20px">{{ARCH}}</div>
+  <p class="caption" style="font-size:26px">Serverless AWS &middot; Cognito sign-in &middot; One DynamoDB table &middot; Bedrock model chain &middot; Untrusted input walled off</p>
+  <div class="footer" style="font-size:24px"><span>Semester OS &middot; Icons: AWS Architecture Icons, Simple Icons</span><span>10</span></div>
+  <aside class="notes">0:35. Everything runs serverless on AWS: Cognito sign-in, one DynamoDB table and a Bedrock model chain that falls back if a model is down. It scales with students rather than servers.</aside>
+</section>
+
+<!-- 12 CRITERIA -->
+<section class="slide">
+  <span class="eyebrow">The criteria</span><h1 class="title" style="font-size:64px">Every criterion, shown</h1>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:18px 28px;flex:none"><div class="card" style="padding:20px 26px"><h3 style="font-size:34px;color:var(--accent-strong)">Innovation</h3><p style="font-size:30px;line-height:1.25">Need-first: the syllabus decides what you buy</p></div><div class="card" style="padding:20px 26px"><h3 style="font-size:34px;color:var(--accent-strong)">Multi-tenant</h3><p style="font-size:30px;line-height:1.25">249 campuses; any .edu email creates its themed campus</p></div><div class="card" style="padding:20px 26px"><h3 style="font-size:34px;color:var(--accent-strong)">Campus-verified</h3><p style="font-size:30px;line-height:1.25">.edu email code plus separate staff login with MFA</p></div><div class="card" style="padding:20px 26px"><h3 style="font-size:34px;color:var(--accent-strong)">Cross-campus</h3><p style="font-size:30px;line-height:1.25">Network marketplace across campuses</p></div><div class="card" style="padding:20px 26px"><h3 style="font-size:34px;color:var(--accent-strong)">Actually works</h3><p style="font-size:30px;line-height:1.25">Live on AWS; real Blackboard classes imported in one click</p></div><div class="card" style="padding:20px 26px"><h3 style="font-size:34px;color:var(--accent-strong)">Functionality</h3><p style="font-size:30px;line-height:1.25">Class agents, deadlines, three-tab marketplace, simulated checkout</p></div><div class="card" style="padding:20px 26px"><h3 style="font-size:34px;color:var(--accent-strong)">New-campus deploy</h3><p style="font-size:30px;line-height:1.25">No code: first sign-in creates the campus</p></div><div class="card" style="padding:20px 26px"><h3 style="font-size:34px;color:var(--accent-strong)">Polish</h3><p style="font-size:30px;line-height:1.25">Designed UI, robot avatars, themed colours</p></div></div>
+  <p class="caption" style="font-size:28px">Side tracks: Best Frontend &middot; Best MVP &middot; Best Use of Open Source AI (open-weight models: GLM-5, gpt-oss, Mistral)</p>
+  <div class="footer"><span>Semester OS</span><span>11</span></div>
+  <aside class="notes">0:30. Here is how Semester OS measures up against the criteria, with one line of proof you can see in the product for each: need-first marketplace, 249 campuses, verified students and staff, cross-campus listings, live on AWS, and a polished UI. On the side tracks: the frontend is fully custom, this is a working MVP, and our agents run on open-weight models like GLM-5, gpt-oss and Mistral.</aside>
+</section>
+
+<!-- 13 CLOSE -->
+<section class="slide" style="justify-content:center">
+  <div class="row" style="gap:110px;align-items:center;justify-content:center">
+   <div style="display:flex;flex-direction:column;gap:36px;max-width:1000px">
+    <img src="assets/logo/semester-os-mark.svg" style="height:110px;align-self:flex-start" alt="">
+    <h1 class="title title--xl">Try it now</h1>
+    <p class="subtitle">Sign up with your school email (.edu). Any US college works.</p>
+    </div>
+   <div style="text-align:center;flex:none">
+    <div style="background:#fff;border-radius:24px;width:480px;height:480px;overflow:hidden">{{QR:480}}</div>
+    <p class="body" style="margin-top:20px;font-weight:700">Try it now</p>
+    <p class="caption mono"><deployed-host-1></p>
+   </div>
+  </div>
+  <div class="footer"><span>Thank you</span><span>12</span></div>
+  <aside class="notes">0:15. Scan the code and sign up with your .edu email; any US college works. Thank you.
+LIKELY QUESTIONS. 1) How does it scale? Serverless on AWS: Lambda, one DynamoDB table and Cognito scale per request, and a new campus is data, not code. 2) How does the Blackboard part work, and is it allowed? It runs in the student's own browser, only when they press Scan, read-only and never sees passwords; it reads what the student can already see. 3) What is real versus demo? The app, agents, campuses and chats are live; marketplace listings are labelled demo data and checkout is a simulation; the helper is installed unpacked today.</aside>
+</section>
+
+</div></div>
+<div id="hud"></div>
+<script>
+const qs=new URLSearchParams(location.search);
+const slides=[...document.querySelectorAll('.slide')];
+const frame=document.getElementById('frame'),hud=document.getElementById('hud');
+let i=Math.max(0,Math.min(slides.length-1,(parseInt(location.hash.slice(1))||1)-1));
+function fit(){const s=Math.min(innerWidth/1920,innerHeight/1080);frame.style.transform='translate(-50%,-50%) scale('+s+')'}
+function show(n){i=Math.max(0,Math.min(slides.length-1,n));slides.forEach((s,k)=>s.classList.toggle('on',k===i));hud.textContent=(i+1)+' / '+slides.length+'  (F fullscreen, arrows)';try{history.replaceState(null,'','#'+(i+1))}catch(e){}}
+if(qs.get('notes')==='1'){document.body.classList.add('notesview');
+ slides.forEach(s=>{const n=s.querySelector('.notes');const row=document.createElement('div');row.className='row-n';const box=document.createElement('div');box.className='slidebox';s.parentNode.insertBefore(row,s);box.appendChild(s);row.appendChild(box);row.appendChild(n)});
+}else{
+ addEventListener('resize',fit);fit();show(i);
+ addEventListener('keydown',e=>{
+  if(['ArrowRight','PageDown',' ','Enter'].includes(e.key)){e.preventDefault();show(i+1)}
+  else if(['ArrowLeft','PageUp','Backspace'].includes(e.key)){e.preventDefault();show(i-1)}
+  else if(e.key==='Home')show(0);else if(e.key==='End')show(slides.length-1);
+  else if(e.key==='f'||e.key==='F'){document.fullscreenElement?document.exitFullscreen():document.documentElement.requestFullscreen()}
+ });
+ document.addEventListener('click',e=>{if(e.clientX>innerWidth/2)show(i+1);else show(i-1)});
+}
+</script>
+</body></html>

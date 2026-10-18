@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" role="img" aria-label="Art supplies kit">
+<defs><filter id="b" x="-20%" y="-50%" width="140%" height="200%"><feGaussianBlur stdDeviation="9"/></filter></defs>
+<rect width="640" height="480" fill="#FEF3C7"/>
+<circle cx="520" cy="90" r="120" fill="#FDE68A" opacity=".55"/>
+<circle cx="90" cy="420" r="90" fill="#FDE68A" opacity=".4"/>
+<ellipse cx="320" cy="412" rx="190" ry="20" fill="#0F172A" opacity=".16" filter="url(#b)"/>
+<g transform="translate(320 260) scale(1.08) translate(-320 -260)"><rect x="120" y="240" width="400" height="150" rx="22" fill="#F59E0B" /><rect x="120" y="240" width="400" height="40" rx="16" fill="#D97706" /><rect x="170" y="90" width="26" height="170" rx="13" fill="#E11D48" /><path d="M170 90 L183 60 L196 90 Z" fill="#FDE68A" /><rect x="236" y="110" width="26" height="170" rx="13" fill="#0D9488" /><path d="M236 110 L249 80 L262 110 Z" fill="#FDE68A" /><rect x="302" y="90" width="26" height="170" rx="13" fill="#4F46E5" /><path d="M302 90 L315 60 L328 90 Z" fill="#FDE68A" /><rect x="368" y="110" width="26" height="170" rx="13" fill="#7C3AED" /><path d="M368 110 L381 80 L394 110 Z" fill="#FDE68A" /><rect x="434" y="90" width="26" height="170" rx="13" fill="#0284C7" /><path d="M434 90 L447 60 L460 90 Z" fill="#FDE68A" /><circle cx="430" cy="330" r="28" fill="#fff" opacity=".9"/><circle cx="430" cy="330" r="14" fill="#E11D48" /><circle cx="500" cy="330" r="20" fill="#fff" opacity=".9"/><circle cx="500" cy="330" r="10" fill="#0284C7" /></g>
+</svg>

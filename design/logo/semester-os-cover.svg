@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-label="Semester OS: your college chief-of-staff" >
+  <title>Semester OS: your college chief-of-staff</title>
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4F46E5"/><stop offset="1" stop-color="#3B33C9"/></linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0" r="0.8"><stop offset="0" stop-color="#4F46E5" stop-opacity="0.45"/><stop offset="1" stop-color="#4F46E5" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="1920" height="1080" fill="#0B0D11"/>
+  <rect width="1920" height="1080" fill="url(#glow)"/>
+  <g transform="translate(474 320) scale(3.4)"><g transform="translate(8 8) scale(0.4375)"><rect x="4" y="4" width="120" height="120" rx="30" fill="#4F46E5"/><circle cx="31" cy="29" r="4" fill="#FFFFFF" opacity="1.0"/><circle cx="43" cy="29" r="4" fill="#FFFFFF" opacity="0.6"/><circle cx="55" cy="29" r="4" fill="#FFFFFF" opacity="0.35"/><path d="M83 60 C83 49 74 44 63 44 C52 44 44 50 44 58 C44 68 53 70 64 72 C75 74 84 78 84 88 C84 97 75 103 64 103 C53 103 45 98 43 88" fill="none" stroke="#FFFFFF" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/></g><text x="76" y="47" font-family="Inter, 'Segoe UI', system-ui, -apple-system, Roboto, sans-serif" font-size="34" font-weight="800" letter-spacing="-1" fill="#ECEEF3">Semester</text><rect x="226" y="22" width="52" height="34" rx="9" fill="#847EED"/><text x="252" y="46" text-anchor="middle" font-family="ui-monospace, 'JetBrains Mono', Menlo, Consolas, monospace" font-size="22" font-weight="700" letter-spacing="1" fill="#10131A">OS</text></g>
+  <text x="960" y="640" text-anchor="middle" font-family="Inter, 'Segoe UI', system-ui, -apple-system, Roboto, sans-serif" font-size="40" font-weight="500" fill="#98A0B0">Your college chief-of-staff</text>
+  <g transform="translate(604.0 800) scale(1.25)" color="#847EED" fill="none"><path d="M48 26 V17" stroke="currentColor" stroke-width="4" stroke-linecap="round"/>
+  <polygon points="48.0,1.0 50.4,6.7 56.6,7.2 51.9,11.3 53.3,17.3 48.0,14.1 42.7,17.3 44.1,11.3 39.4,7.2 45.6,6.7" fill="currentColor" stroke="#FFFFFF" stroke-width="2" stroke-linejoin="round"/>
+
+  <rect x="10" y="42" width="6" height="14" rx="3" fill="currentColor"/>
+  <rect x="80" y="42" width="6" height="14" rx="3" fill="currentColor"/>
+  <rect x="16" y="26" width="64" height="46" rx="16" fill="currentColor"/>
+  <rect x="23" y="33" width="50" height="32" rx="11" fill="#FFFFFF"/>
+  <circle cx="38" cy="49" r="4.5" fill="#10131A"/>
+  <circle cx="58" cy="49" r="4.5" fill="#10131A"/>
+  <path d="M41 57 Q48 62 55 57" stroke="#10131A" stroke-width="3" stroke-linecap="round"/>
+  <rect x="28" y="76" width="40" height="16" rx="8" fill="currentColor"/>
+  <rect x="40" y="79" width="16" height="10" rx="3" fill="#FFFFFF"/>
+  <polygon points="48.0,80.4 49.0,82.7 51.4,82.9 49.5,84.5 50.1,86.9 48.0,85.6 45.9,86.9 46.5,84.5 44.6,82.9 47.0,82.7" fill="#10131A"/></g>
+  <g transform="translate(752.0 800) scale(1.25)" color="#2FA399" fill="none"><path d="M32 19 V26 Q48 33 64 26 V19" fill="currentColor" stroke="#FFFFFF" stroke-width="2" stroke-linejoin="round"/>
+  <polygon points="48,4 78,15 48,26 18,15" fill="currentColor" stroke="#FFFFFF" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M74 16.5 V28" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="74" cy="30" r="3" fill="currentColor"/>
+
+  <rect x="10" y="42" width="6" height="14" rx="3" fill="currentColor"/>
+  <rect x="80" y="42" width="6" height="14" rx="3" fill="currentColor"/>
+  <rect x="16" y="26" width="64" height="46" rx="16" fill="currentColor"/>
+  <rect x="23" y="33" width="50" height="32" rx="11" fill="#FFFFFF"/>
+  <circle cx="38" cy="49" r="4.5" fill="#10131A"/>
+  <circle cx="58" cy="49" r="4.5" fill="#10131A"/>
+  <path d="M41 57 Q48 62 55 57" stroke="#10131A" stroke-width="3" stroke-linecap="round"/>
+  <rect x="28" y="76" width="40" height="16" rx="8" fill="currentColor"/>
+  <rect x="40" y="79" width="16" height="10" rx="3" fill="#FFFFFF"/>
+  <path d="M43 84 H53 M48 81.5 V86.5" stroke="#10131A" stroke-width="1.8" stroke-linecap="round"/></g>
+  <g transform="translate(900.0 800) scale(1.25)" color="#DB7C10" fill="none"><path d="M32 19 V26 Q48 33 64 26 V19" fill="currentColor" stroke="#FFFFFF" stroke-width="2" stroke-linejoin="round"/>
+  <polygon points="48,4 78,15 48,26 18,15" fill="currentColor" stroke="#FFFFFF" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M74 16.5 V28" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="74" cy="30" r="3" fill="currentColor"/>
+
+  <rect x="10" y="42" width="6" height="14" rx="3" fill="currentColor"/>
+  <rect x="80" y="42" width="6" height="14" rx="3" fill="currentColor"/>
+  <rect x="16" y="26" width="64" height="46" rx="16" fill="currentColor"/>
+  <rect x="23" y="33" width="50" height="32" rx="11" fill="#FFFFFF"/>
+  <circle cx="38" cy="49" r="4.5" fill="#10131A"/>
+  <circle cx="58" cy="49" r="4.5" fill="#10131A"/>
+  <path d="M41 57 Q48 62 55 57" stroke="#10131A" stroke-width="3" stroke-linecap="round"/>
+  <rect x="28" y="76" width="40" height="16" rx="8" fill="currentColor"/>
+  <rect x="40" y="79" width="16" height="10" rx="3" fill="#FFFFFF"/>
+  <path d="M43 84 H53 M48 81.5 V86.5" stroke="#10131A" stroke-width="1.8" stroke-linecap="round"/></g>
+  <g transform="translate(1048.0 800) scale(1.25)" color="#E95878" fill="none"><path d="M32 19 V26 Q48 33 64 26 V19" fill="currentColor" stroke="#FFFFFF" stroke-width="2" stroke-linejoin="round"/>
+  <polygon points="48,4 78,15 48,26 18,15" fill="currentColor" stroke="#FFFFFF" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M74 16.5 V28" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="74" cy="30" r="3" fill="currentColor"/>
+
+  <rect x="10" y="42" width="6" height="14" rx="3" fill="currentColor"/>
+  <rect x="80" y="42" width="6" height="14" rx="3" fill="currentColor"/>
+  <rect x="16" y="26" width="64" height="46" rx="16" fill="currentColor"/>
+  <rect x="23" y="33" width="50" height="32" rx="11" fill="#FFFFFF"/>
+  <circle cx="38" cy="49" r="4.5" fill="#10131A"/>
+  <circle cx="58" cy="49" r="4.5" fill="#10131A"/>
+  <path d="M41 57 Q48 62 55 57" stroke="#10131A" stroke-width="3" stroke-linecap="round"/>
+  <rect x="28" y="76" width="40" height="16" rx="8" fill="currentColor"/>
+  <rect x="40" y="79" width="16" height="10" rx="3" fill="#FFFFFF"/>
+  <path d="M43 84 H53 M48 81.5 V86.5" stroke="#10131A" stroke-width="1.8" stroke-linecap="round"/></g>
+  <g transform="translate(1196.0 800) scale(1.25)" color="#28A57E" fill="none"><path d="M32 19 V26 Q48 33 64 26 V19" fill="currentColor" stroke="#FFFFFF" stroke-width="2" stroke-linejoin="round"/>
+  <polygon points="48,4 78,15 48,26 18,15" fill="currentColor" stroke="#FFFFFF" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M74 16.5 V28" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="74" cy="30" r="3" fill="currentColor"/>
+
+  <rect x="10" y="42" width="6" height="14" rx="3" fill="currentColor"/>
+  <rect x="80" y="42" width="6" height="14" rx="3" fill="currentColor"/>
+  <rect x="16" y="26" width="64" height="46" rx="16" fill="currentColor"/>
+  <rect x="23" y="33" width="50" height="32" rx="11" fill="#FFFFFF"/>
+  <circle cx="38" cy="49" r="4.5" fill="#10131A"/>
+  <circle cx="58" cy="49" r="4.5" fill="#10131A"/>
+  <path d="M41 57 Q48 62 55 57" stroke="#10131A" stroke-width="3" stroke-linecap="round"/>
+  <rect x="28" y="76" width="40" height="16" rx="8" fill="currentColor"/>
+  <rect x="40" y="79" width="16" height="10" rx="3" fill="#FFFFFF"/>
+  <path d="M43 84 H53 M48 81.5 V86.5" stroke="#10131A" stroke-width="1.8" stroke-linecap="round"/></g>
+</svg>

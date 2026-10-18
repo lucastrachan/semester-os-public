@@ -1,0 +1,110 @@
+/* Semester OS base: reset, typography, focus, scrollbars, ambient background, a11y utilities. */
+
+*, *::before, *::after { box-sizing: border-box; }
+* { margin: 0; padding: 0; }
+
+html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+
+body {
+  font-family: var(--font-sans);
+  font-size: var(--text-base);
+  line-height: 1.55;
+  color: var(--ink);
+  background: var(--bg);
+  min-height: 100vh;
+  min-height: 100dvh;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-feature-settings: 'cv11', 'ss01';
+  overflow-wrap: break-word;
+}
+
+#root { display: contents; }
+
+/* Ambient wash: the accent bleeds in softly at the top, so theme changes are felt page-wide.
+   Fixed + pointer-events none = no layout impact. */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0 0 auto 0;
+  height: 28rem;
+  background:
+    radial-gradient(60rem 20rem at 20% -4rem, var(--accent-tint), transparent 70%),
+    radial-gradient(40rem 16rem at 90% -6rem, var(--accent-tint), transparent 75%);
+  opacity: 0.9;
+  pointer-events: none;
+  z-index: -1;
+}
+
+img, svg, video { display: block; max-width: 100%; }
+button, input, select, textarea { font: inherit; color: inherit; }
+button { cursor: pointer; background: none; border: none; }
+button:disabled { cursor: not-allowed; }
+a { color: var(--accent-strong); text-underline-offset: 0.18em; text-decoration-thickness: 1px; }
+a:hover { text-decoration-thickness: 2px; }
+ul, ol { list-style: none; }
+hr { border: 0; border-top: 1px solid var(--border); }
+
+h1, h2, h3, h4 { line-height: 1.2; letter-spacing: -0.02em; font-weight: 700; text-wrap: balance; }
+p { text-wrap: pretty; }
+code, kbd, samp, .mono { font-family: var(--font-mono); font-size: 0.92em; }
+::selection { background: var(--accent); color: var(--accent-ink); }
+
+/* Visible keyboard focus everywhere (AA non-text contrast: --accent-strong is >= 4.65:1 on bg/surface/tint). */
+:focus { outline: none; }
+:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 2px;
+  border-radius: var(--radius-sm);
+}
+/* Inputs show focus with a ring instead of an outline offset */
+input:focus-visible, select:focus-visible, textarea:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 0;
+}
+
+/* Scrollbars */
+* { scrollbar-width: thin; scrollbar-color: var(--border-strong) transparent; }
+
+/* Utilities */
+.sr-only {
+  position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+  overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0;
+}
+.skip-link {
+  position: fixed; left: var(--s-3); top: var(--s-3); z-index: 100;
+  padding: var(--s-2) var(--s-4); border-radius: var(--radius);
+  background: var(--accent); color: var(--accent-ink); font-weight: 600; text-decoration: none;
+  transform: translateY(-200%);
+}
+.skip-link:focus { transform: none; }
+.muted { color: var(--muted); }
+.mono { font-family: var(--font-mono); }
+.eyebrow {
+  font-family: var(--font-mono); font-size: var(--text-xs); letter-spacing: 0.08em;
+  text-transform: uppercase; color: var(--muted);
+}
+.stack { display: flex; flex-direction: column; gap: var(--s-4); }
+.row { display: flex; align-items: center; gap: var(--s-3); flex-wrap: wrap; }
+.grow { flex: 1 1 auto; min-width: 0; }
+.truncate { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.tabular { font-variant-numeric: tabular-nums; }
+
+/* Reduced motion: no transitions or animations, no smooth scroll. Information is never carried by motion alone. */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+@media (prefers-reduced-motion: no-preference) {
+  html { scroll-behavior: smooth; }
+}
+
+/* Forced-colors (Windows high contrast): keep borders and focus visible */
+@media (forced-colors: active) {
+  .card, .window, .btn, .field input, .field select, .field textarea { border: 1px solid CanvasText; }
+  :focus-visible { outline-color: Highlight; }
+}

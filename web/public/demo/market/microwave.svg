@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" role="img" aria-label="Microwave">
+<defs><filter id="b" x="-20%" y="-50%" width="140%" height="200%"><feGaussianBlur stdDeviation="9"/></filter></defs>
+<rect width="640" height="480" fill="#FFE4E6"/>
+<circle cx="520" cy="90" r="120" fill="#FECDD3" opacity=".55"/>
+<circle cx="90" cy="420" r="90" fill="#FECDD3" opacity=".4"/>
+<ellipse cx="320" cy="412" rx="190" ry="20" fill="#0F172A" opacity=".16" filter="url(#b)"/>
+<g transform="translate(320 260) scale(1.08) translate(-320 -260)"><rect x="120" y="130" width="400" height="250" rx="20" fill="#CBD5E1" /><rect x="140" y="150" width="250" height="210" rx="12" fill="#1E293B" /><rect x="150" y="160" width="230" height="190" rx="8" fill="#475569" /><path d="M160 170 L230 170 L160 240 Z" fill="#fff" opacity=".18"/><rect x="410" y="160" width="90" height="60" rx="8" fill="#F1F5F9" /><text x="455" y="200" font-family="system-ui,Segoe UI,Arial,sans-serif" font-size="24" font-weight="700" fill="#0F172A" text-anchor="middle">1:30</text><circle cx="455" cy="250" r="12" fill="#94A3B8" /><circle cx="455" cy="284" r="12" fill="#94A3B8" /><circle cx="455" cy="318" r="12" fill="#94A3B8" /><rect x="160" y="380" width="24" height="12" rx="3" fill="#64748B" /><rect x="456" y="380" width="24" height="12" rx="3" fill="#64748B" /></g>
+</svg>

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 260" width="340" height="260" role="img" aria-label="Semester OS" >
+  <title>Semester OS</title>
+  <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4F46E5"/><stop offset="1" stop-color="#3B33C9"/></linearGradient></defs>
+  <g transform="translate(100 8) scale(1.1)"><rect x="4" y="4" width="120" height="120" rx="30" fill="#4F46E5"/><circle cx="31" cy="29" r="4" fill="#FFFFFF" opacity="1.0"/><circle cx="43" cy="29" r="4" fill="#FFFFFF" opacity="0.6"/><circle cx="55" cy="29" r="4" fill="#FFFFFF" opacity="0.35"/><path d="M83 60 C83 49 74 44 63 44 C52 44 44 50 44 58 C44 68 53 70 64 72 C75 74 84 78 84 88 C84 97 75 103 64 103 C53 103 45 98 43 88" fill="none" stroke="#FFFFFF" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/></g>
+  <text x="170" y="196" text-anchor="middle" font-family="Inter, 'Segoe UI', system-ui, -apple-system, Roboto, sans-serif" font-size="46" font-weight="800" letter-spacing="-1.5" fill="#ECEEF3">Semester</text>
+  <rect x="138" y="208" width="64" height="40" rx="11" fill="#847EED"/>
+  <text x="170" y="237" text-anchor="middle" font-family="ui-monospace, 'JetBrains Mono', Menlo, Consolas, monospace" font-size="26" font-weight="700" letter-spacing="1" fill="#10131A">OS</text>
+</svg>

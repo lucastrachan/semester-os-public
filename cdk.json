@@ -1,0 +1,22 @@
+{
+  "app": "python infra/app.py",
+  "watch": {
+    "include": [
+      "infra/**",
+      "backend/**"
+    ],
+    "exclude": [
+      "**/__pycache__",
+      "infra/.venv",
+      "cdk.out"
+    ]
+  },
+  "context": {
+    "@aws-cdk/aws-lambda:recognizeLayerVersion": true,
+    "@aws-cdk/core:checkSecretUsage": true,
+    "@aws-cdk/aws-s3:serverAccessLogsUseBucketPolicy": true,
+    "@aws-cdk/core:enablePartitionLiterals": true,
+    "@aws-cdk/aws-cloudfront:defaultSecurityPolicyTLSv1.2_2021": true,
+    "adminApiOrigin": ""
+  }
+}

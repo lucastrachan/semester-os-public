@@ -1,0 +1,1508 @@
+{
+  "ua.edu": {
+    "name": "The University of Alabama",
+    "primary": "#9E1B32",
+    "secondary": "#828A8F",
+    "source": "https://brand.ua.edu/color/"
+  },
+  "auburn.edu": {
+    "name": "Auburn University",
+    "primary": "#0B2341",
+    "secondary": "#E86100",
+    "source": "https://ocm.auburn.edu/brand-center/colors.php"
+  },
+  "uab.edu": {
+    "name": "University of Alabama at Birmingham",
+    "primary": "#1A5632",
+    "secondary": "#FDB913",
+    "source": "https://bb.uab.edu/brandguide/university/colors"
+  },
+  "samford.edu": {
+    "name": "Samford University",
+    "primary": "#0C2340",
+    "secondary": "#BD1F2D",
+    "source": "https://www.samford.edu/Templates/"
+  },
+  "southalabama.edu": {
+    "name": "University of South Alabama",
+    "primary": "#00205B",
+    "secondary": "#BF0D3E",
+    "source": "https://www.southalabama.edu/departments/publicrelations/brand/"
+  },
+  "aamu.edu": {
+    "name": "Alabama A&M University",
+    "primary": "#61162D",
+    "secondary": null,
+    "source": "https://www.aamu.edu/about/administrative-offices/marketing-communication-advancement/marketing-public-relations/brand-guidelines.html"
+  },
+  "alasu.edu": {
+    "name": "Alabama State University",
+    "primary": "#C99700",
+    "secondary": "#000000",
+    "source": "https://www.alasu.edu/administration/institutional-effectiveness/marketing-and-strategic-communications/brand-guidelines.pdf"
+  },
+  "uah.edu": {
+    "name": "University of Alabama at Huntsville",
+    "primary": "#0058A4",
+    "secondary": "#FDDA24",
+    "source": "https://www.uah.edu/omc/resources/brand"
+  },
+  "una.edu": {
+    "name": "University of North Alabama",
+    "primary": "#592B8A",
+    "secondary": "#FFB92A",
+    "source": "https://www.una.edu/emdc/brand/colors.html"
+  },
+  "shc.edu": {
+    "name": "Spring Hill College",
+    "primary": "#3D1951",
+    "secondary": "#A8A8A9",
+    "source": "https://www.shc.edu/wp-content/uploads/2025/07/SHC-OneSheetGuide.pdf"
+  },
+  "uga.edu": {
+    "name": "University of Georgia",
+    "primary": "#BA0C2F",
+    "secondary": "#000000",
+    "source": "https://brand.uga.edu/visual-identity/visual-style/"
+  },
+  "ufl.edu": {
+    "name": "University of Florida",
+    "primary": "#FA4616",
+    "secondary": "#0021A5",
+    "source": "https://brandcenter.ufl.edu/colors/"
+  },
+  "utk.edu": {
+    "name": "University of Tennessee, Knoxville",
+    "primary": "#FF8200",
+    "secondary": null,
+    "source": "https://brand.utk.edu/standards/colors/"
+  },
+  "uky.edu": {
+    "name": "University of Kentucky",
+    "primary": "#0033A0",
+    "secondary": null,
+    "source": "https://webgov.uky.edu/standards/"
+  },
+  "lsu.edu": {
+    "name": "Louisiana State University",
+    "primary": "#461D7C",
+    "secondary": "#FDD023",
+    "source": "https://www.lsu.edu/communications/files/brand-guide.pdf"
+  },
+  "olemiss.edu": {
+    "name": "University of Mississippi",
+    "primary": "#C8102E",
+    "secondary": "#13294B",
+    "source": "https://olemiss.edu/csm/licensing/"
+  },
+  "msstate.edu": {
+    "name": "Mississippi State University",
+    "primary": "#5D1725",
+    "secondary": null,
+    "source": "https://brand.msstate.edu/assets/materials/msstate_colors.pdf"
+  },
+  "uark.edu": {
+    "name": "University of Arkansas - Fayetteville",
+    "primary": "#9D2235",
+    "secondary": null,
+    "source": "https://brand.uark.edu/graphic-identity/official-colors.php"
+  },
+  "missouri.edu": {
+    "name": "University of Missouri",
+    "primary": "#FDB719",
+    "secondary": "#000000",
+    "source": "https://brand.missouri.edu/brand-visuals/colors/"
+  },
+  "tamu.edu": {
+    "name": "Texas A&M University - College Station",
+    "primary": "#500000",
+    "secondary": null,
+    "source": "https://marcomm.tamu.edu/creative-platform/visual-style/web-branding/"
+  },
+  "utexas.edu": {
+    "name": "The University of Texas at Austin",
+    "primary": "#BF5700",
+    "secondary": null,
+    "source": "https://umac.utexas.edu/brand-center/colors/"
+  },
+  "ou.edu": {
+    "name": "University of Oklahoma",
+    "primary": "#841617",
+    "secondary": null,
+    "source": "https://www.ou.edu/brand/creative-platform/design-system/colors"
+  },
+  "sc.edu": {
+    "name": "University of South Carolina",
+    "primary": "#73000A",
+    "secondary": "#000000",
+    "source": "https://sc.edu/about/offices_and_divisions/communications/toolbox/colors/"
+  },
+  "vanderbilt.edu": {
+    "name": "Vanderbilt University",
+    "primary": "#1C1C1C",
+    "secondary": "#CFAE70",
+    "source": "https://brand.vanderbilt.edu/color/"
+  },
+  "clemson.edu": {
+    "name": "Clemson University",
+    "primary": "#F56600",
+    "secondary": "#522D80",
+    "source": "https://www.clemson.edu/brand/web/color.html"
+  },
+  "fsu.edu": {
+    "name": "Florida State University",
+    "primary": "#782F40",
+    "secondary": "#CEB888",
+    "source": "https://brand.fsu.edu/web/colors"
+  },
+  "miami.edu": {
+    "name": "University of Miami",
+    "primary": "#F47321",
+    "secondary": "#005030",
+    "source": "https://webcomm.miami.edu/resources/identity/color/index.html"
+  },
+  "duke.edu": {
+    "name": "Duke University",
+    "primary": "#012169",
+    "secondary": "#00539B",
+    "source": "https://brand.duke.edu/colors/"
+  },
+  "unc.edu": {
+    "name": "University of North Carolina at Chapel Hill",
+    "primary": "#4B9CD3",
+    "secondary": null,
+    "source": "https://identity.unc.edu/brand/color/"
+  },
+  "ncsu.edu": {
+    "name": "North Carolina State University",
+    "primary": "#CC0000",
+    "secondary": "#000000",
+    "source": "https://brand.ncsu.edu/color/"
+  },
+  "virginia.edu": {
+    "name": "University of Virginia, Charlottesville",
+    "primary": "#232D4B",
+    "secondary": "#E57200",
+    "source": "https://brand.virginia.edu/design-assets/colors"
+  },
+  "vt.edu": {
+    "name": "Virginia Tech",
+    "primary": "#861F41",
+    "secondary": "#E87722",
+    "source": "https://vetmed.vt.edu/content/dam/vetmed_vt_edu/news/college-brand-guide/VMCVM_BrandGuidelines.pdf"
+  },
+  "wfu.edu": {
+    "name": "Wake Forest University",
+    "primary": "#9E7E38",
+    "secondary": "#000000",
+    "source": "https://brand.wfu.edu/our-brand-identity/color-patterns-papers/"
+  },
+  "gatech.edu": {
+    "name": "Georgia Institute of Technology",
+    "primary": "#B3A369",
+    "secondary": "#003057",
+    "source": "https://brand.gatech.edu/sites/default/files/documents/gtd8_body_styles_guide.pdf"
+  },
+  "louisville.edu": {
+    "name": "University of Louisville",
+    "primary": "#AD0000",
+    "secondary": "#000000",
+    "source": "https://brand.louisville.edu/visual/color"
+  },
+  "nd.edu": {
+    "name": "University of Notre Dame",
+    "primary": "#0C2340",
+    "secondary": "#AE9142",
+    "source": "https://onmessage.nd.edu/university-branding/colors/"
+  },
+  "pitt.edu": {
+    "name": "University of Pittsburgh",
+    "primary": "#003594",
+    "secondary": "#FFB81C",
+    "source": "https://www.brand.pitt.edu/brand-elements/color-palettes"
+  },
+  "syr.edu": {
+    "name": "Syracuse University",
+    "primary": "#F76900",
+    "secondary": null,
+    "source": "https://designsystem.syr.edu/documentation/design-tokens/color/"
+  },
+  "illinois.edu": {
+    "name": "University of Illinois Urbana-Champaign",
+    "primary": "#FF5F05",
+    "secondary": "#13294B",
+    "source": "https://brand.illinois.edu/visual-identity/color"
+  },
+  "iu.edu": {
+    "name": "Indiana University",
+    "primary": "#990000",
+    "secondary": null,
+    "source": "https://www.iu.edu/brand/iu-brand/visual-identity/color.html"
+  },
+  "indiana.edu": {
+    "name": "Indiana University - Bloomington",
+    "primary": "#990000",
+    "secondary": null,
+    "source": "https://www.iu.edu/brand/iu-brand/visual-identity/color.html"
+  },
+  "uiowa.edu": {
+    "name": "University of Iowa",
+    "primary": "#FFCD00",
+    "secondary": "#000000",
+    "source": "https://brand.uiowa.edu/color"
+  },
+  "umd.edu": {
+    "name": "University of Maryland, College Park",
+    "primary": "#E21833",
+    "secondary": "#FFD200",
+    "source": "https://brand.umd.edu/visual-identity/colors"
+  },
+  "umich.edu": {
+    "name": "University of Michigan - Ann Arbor",
+    "primary": "#00274C",
+    "secondary": "#FFCB05",
+    "source": "https://brand.umich.edu/design-resources/colors/"
+  },
+  "msu.edu": {
+    "name": "Michigan State University",
+    "primary": "#18453B",
+    "secondary": null,
+    "source": "https://brand.msu.edu/visual/color-palette"
+  },
+  "umn.edu": {
+    "name": "University of Minnesota",
+    "primary": "#6D001F",
+    "secondary": "#FFCC33",
+    "source": "https://umarcomm.umn.edu/blog/2026/09/24/fresh-brand-colors-and-typeface"
+  },
+  "unl.edu": {
+    "name": "University of Nebraska, Lincoln",
+    "primary": "#D00000",
+    "secondary": "#F5F1E7",
+    "source": "https://ucomm.unl.edu/brand/templates-assets/colors/"
+  },
+  "northwestern.edu": {
+    "name": "Northwestern University",
+    "primary": "#4E2A84",
+    "secondary": null,
+    "source": "https://www.northwestern.edu/brand/visual-identity/color-palettes/"
+  },
+  "osu.edu": {
+    "name": "Ohio State University - Columbus",
+    "primary": "#BA0C2F",
+    "secondary": "#A7B1B7",
+    "source": "https://bux.osu.edu/color/primary-colors/"
+  },
+  "uoregon.edu": {
+    "name": "University of Oregon",
+    "primary": "#007030",
+    "secondary": "#FEE11A",
+    "source": "https://communications.uoregon.edu/uo-brand/visual-identity/colors"
+  },
+  "psu.edu": {
+    "name": "Pennsylvania State University",
+    "primary": "#001E44",
+    "secondary": "#1E407C",
+    "source": "https://brand.psu.edu/visual-identity-standards/color-and-the-mark"
+  },
+  "purdue.edu": {
+    "name": "Purdue University",
+    "primary": "#CFB991",
+    "secondary": "#000000",
+    "source": "https://www.purdue.edu/brand-studio/brand/visual-identity/"
+  },
+  "rutgers.edu": {
+    "name": "Rutgers University",
+    "primary": "#CC0033",
+    "secondary": null,
+    "source": "https://communications.rutgers.edu/sites/default/files/rutgers_visual_identity_system_user_guide.pdf"
+  },
+  "ucla.edu": {
+    "name": "University of California, Los Angeles",
+    "primary": "#2774AE",
+    "secondary": "#FFD100",
+    "source": "https://brand.ucla.edu/identity/colors"
+  },
+  "usc.edu": {
+    "name": "University of Southern California",
+    "primary": "#990000",
+    "secondary": "#FFCC00",
+    "source": "https://identity.usc.edu/identity/color/"
+  },
+  "washington.edu": {
+    "name": "University of Washington",
+    "primary": "#4B2E83",
+    "secondary": "#FFC700",
+    "source": "https://www.washington.edu/brand/brand-elements/colors/"
+  },
+  "uw.edu": {
+    "name": "University of Washington",
+    "primary": "#4B2E83",
+    "secondary": "#FFC700",
+    "source": "https://www.washington.edu/brand/brand-elements/colors/"
+  },
+  "wisc.edu": {
+    "name": "University of Wisconsin - Madison",
+    "primary": "#C5050C",
+    "secondary": "#9B0000",
+    "source": "https://brand.wisc.edu/visual-identity/colors/"
+  },
+  "arizona.edu": {
+    "name": "University of Arizona",
+    "primary": "#AB0520",
+    "secondary": "#0C234B",
+    "source": "https://marcom.arizona.edu/brand-guidelines/colors"
+  },
+  "asu.edu": {
+    "name": "Arizona State University",
+    "primary": "#8C1D40",
+    "secondary": "#FFC627",
+    "source": "https://brandguide.asu.edu/brand-elements/design/color"
+  },
+  "baylor.edu": {
+    "name": "Baylor University",
+    "primary": "#154734",
+    "secondary": "#FFB81C",
+    "source": "https://brand.web.baylor.edu/brand-standards/official-brand-colors"
+  },
+  "uc.edu": {
+    "name": "University of Cincinnati",
+    "primary": "#E00122",
+    "secondary": "#000000",
+    "source": "https://www.uc.edu/about/marketing-communications/brand-guide/visual-identity/color.html"
+  },
+  "colorado.edu": {
+    "name": "University of Colorado at Boulder",
+    "primary": "#CFB87C",
+    "secondary": "#000000",
+    "source": "https://www.colorado.edu/imc/cu-boulder-brand/visual-identity"
+  },
+  "uh.edu": {
+    "name": "University of Houston",
+    "primary": "#C8102E",
+    "secondary": null,
+    "source": "https://www.uh.edu/brand/brand-identity/style-guide/index.php"
+  },
+  "iastate.edu": {
+    "name": "Iowa State University",
+    "primary": "#C8102E",
+    "secondary": "#F1BE48",
+    "source": "https://www.brandmarketing.iastate.edu/brand-elements/color-palette/"
+  },
+  "ku.edu": {
+    "name": "University of Kansas",
+    "primary": "#0051BA",
+    "secondary": "#E8000D",
+    "source": "https://brand.ku.edu/guidelines/design/color"
+  },
+  "k-state.edu": {
+    "name": "Kansas State University",
+    "primary": "#512888",
+    "secondary": null,
+    "source": "https://www.k-state.edu/communications-marketing/brand-style/visual-language/color/"
+  },
+  "okstate.edu": {
+    "name": "Oklahoma State University",
+    "primary": "#FE5C00",
+    "secondary": "#000000",
+    "source": "https://brand.okstate.edu/branding-guidelines/colors"
+  },
+  "tcu.edu": {
+    "name": "Texas Christian University",
+    "primary": "#4D1979",
+    "secondary": "#A3A9AC",
+    "source": "https://brand.tcu.edu/university-color/"
+  },
+  "ttu.edu": {
+    "name": "Texas Tech University",
+    "primary": "#E90802",
+    "secondary": "#000000",
+    "source": "https://www.ttu.edu/brand/visual-identity/index.php"
+  },
+  "ucf.edu": {
+    "name": "University of Central Florida",
+    "primary": "#EDB80D",
+    "secondary": "#000000",
+    "source": "https://www.ucf.edu/brand/brand-assets/colors/"
+  },
+  "utah.edu": {
+    "name": "University of Utah",
+    "primary": "#BE0000",
+    "secondary": null,
+    "source": "https://brand.utah.edu/branding/colors/"
+  },
+  "wvu.edu": {
+    "name": "West Virginia University",
+    "primary": "#EAAA00",
+    "secondary": "#002855",
+    "source": "https://trademarklicensing.wvu.edu/protected-indicia/brand-guide"
+  },
+  "oregonstate.edu": {
+    "name": "Oregon State University",
+    "primary": "#D73F09",
+    "secondary": null,
+    "source": "https://communications.oregonstate.edu/brand-guide/colors"
+  },
+  "wsu.edu": {
+    "name": "Washington State University",
+    "primary": "#A60F2D",
+    "secondary": "#4D4D4D",
+    "source": "https://brand.wsu.edu/colors/"
+  },
+  "stanford.edu": {
+    "name": "Stanford University",
+    "primary": "#8C1515",
+    "secondary": null,
+    "source": "https://identity.stanford.edu/design-elements/color/primary-colors/"
+  },
+  "berkeley.edu": {
+    "name": "University of California, Berkeley",
+    "primary": "#002676",
+    "secondary": "#FDB515",
+    "source": "https://brand.berkeley.edu/visual-identity/colors/"
+  },
+  "boisestate.edu": {
+    "name": "Boise State University",
+    "primary": "#0033A0",
+    "secondary": "#D64309",
+    "source": "https://www.boisestate.edu/brand/visual-identity/colors/"
+  },
+  "colostate.edu": {
+    "name": "Colorado State University",
+    "primary": "#1E4D2B",
+    "secondary": "#C8C372",
+    "source": "https://brand.colostate.edu/color/"
+  },
+  "unlv.edu": {
+    "name": "University of Nevada, Las Vegas",
+    "primary": "#B10202",
+    "secondary": "#666666",
+    "source": "https://www.unlv.edu/brand/colors"
+  },
+  "unm.edu": {
+    "name": "University of New Mexico",
+    "primary": "#BA0C2F",
+    "secondary": "#A7A8AA",
+    "source": "https://brand.unm.edu/brand-style/color-palette/index.html"
+  },
+  "uwyo.edu": {
+    "name": "University of Wyoming",
+    "primary": "#492F24",
+    "secondary": "#FFC425",
+    "source": "https://www.uwyo.edu/web/branding/index.html"
+  },
+  "usu.edu": {
+    "name": "Utah State University",
+    "primary": "#0F2439",
+    "secondary": null,
+    "source": "https://www.usu.edu/brand/toolkit/guides/colors"
+  },
+  "temple.edu": {
+    "name": "Temple University",
+    "primary": "#A41E35",
+    "secondary": null,
+    "source": "https://cph.temple.edu/sites/cph/files/images/Logos/Temple%20University%20Color%20Palette.pdf"
+  },
+  "fiu.edu": {
+    "name": "Florida International University",
+    "primary": "#081E3F",
+    "secondary": "#D1A644",
+    "source": "https://brand.fiu.edu/visual-styles/colors/"
+  },
+  "usf.edu": {
+    "name": "University of South Florida",
+    "primary": "#006747",
+    "secondary": "#CFC493",
+    "source": "https://www.usf.edu/ucm/marketing/colors.aspx"
+  },
+  "nyu.edu": {
+    "name": "New York University",
+    "primary": "#57068C",
+    "secondary": null,
+    "source": "https://www.nyu.edu/employees/resources-and-services/media-and-communications/nyu-brand-guidelines/designing-in-our-style/nyu-colors.html"
+  },
+  "bu.edu": {
+    "name": "Boston University",
+    "primary": "#CC0000",
+    "secondary": null,
+    "source": "https://www.bu.edu/devcom/files/2010/04/BUBrand_Guidelines_book.pdf"
+  },
+  "northeastern.edu": {
+    "name": "Northeastern University",
+    "primary": "#C8102E",
+    "secondary": null,
+    "source": "https://brand.northeastern.edu/design-and-experiences/color/"
+  },
+  "cornell.edu": {
+    "name": "Cornell University",
+    "primary": "#B31B1B",
+    "secondary": null,
+    "source": "https://brand.cornell.edu/design-center/colors/"
+  },
+  "upenn.edu": {
+    "name": "University of Pennsylvania",
+    "primary": "#011F5B",
+    "secondary": "#990000",
+    "source": "https://branding.web-resources.upenn.edu/logos-and-branding/elements-penn-logo"
+  },
+  "harvard.edu": {
+    "name": "Harvard University",
+    "primary": "#A51C30",
+    "secondary": null,
+    "source": "https://www.harvard.edu/guidelines/wp-content/uploads/sites/10/2025/12/2025_11_24_Harvard_Graphic_Identity_Guidelines-1.pdf"
+  },
+  "mit.edu": {
+    "name": "Massachusetts Institute of Technology",
+    "primary": "#750014",
+    "secondary": null,
+    "source": "https://brand.mit.edu/color"
+  },
+  "jhu.edu": {
+    "name": "Johns Hopkins University",
+    "primary": "#002D72",
+    "secondary": "#F1C400",
+    "source": "https://brand.jhu.edu/visual-identity/enterprise-branding/"
+  },
+  "georgetown.edu": {
+    "name": "Georgetown University",
+    "primary": "#041E42",
+    "secondary": "#63666A",
+    "source": "https://www.georgetown.edu/color-guide/"
+  },
+  "rice.edu": {
+    "name": "Rice University",
+    "primary": "#00205B",
+    "secondary": "#7C7E7F",
+    "source": "https://brand.rice.edu/colors"
+  },
+  "tulane.edu": {
+    "name": "Tulane University",
+    "primary": "#285C4D",
+    "secondary": "#71C5E8",
+    "source": "https://communications.tulane.edu/brand/color"
+  },
+  "emory.edu": {
+    "name": "Emory University",
+    "primary": "#012169",
+    "secondary": "#B58500",
+    "source": "https://brand.emory.edu/color.html"
+  },
+  "yale.edu": {
+    "name": "Yale University",
+    "primary": "#00356B",
+    "secondary": null,
+    "source": "https://licensing.yale.edu/sites/default/files/files/Yale_Brand_Guidelines_2022.pdf"
+  },
+  "princeton.edu": {
+    "name": "Princeton University",
+    "primary": "#E77500",
+    "secondary": null,
+    "source": "https://oitstyleguide.princeton.edu/brand-and-marketing-guidelines/color-palette"
+  },
+  "brown.edu": {
+    "name": "Brown University",
+    "primary": "#4E3629",
+    "secondary": "#C00404",
+    "source": "https://engineering.brown.edu/resources/communications-creative-resources/logo-visual-identity"
+  },
+  "columbia.edu": {
+    "name": "Columbia University",
+    "primary": "#B9D9EB",
+    "secondary": null,
+    "source": "https://visualidentity.columbia.edu/content/color"
+  },
+  "ucsd.edu": {
+    "name": "University of California, San Diego",
+    "primary": "#182B49",
+    "secondary": "#C69214",
+    "source": "https://brand.ucsd.edu/visual-brand/color/index.html"
+  },
+  "uci.edu": {
+    "name": "University of California, Irvine",
+    "primary": "#255799",
+    "secondary": "#FECC07",
+    "source": "https://brand.uci.edu/identity/colors.php"
+  },
+  "ucdavis.edu": {
+    "name": "University of California, Davis",
+    "primary": "#022851",
+    "secondary": "#FFBF00",
+    "source": "https://ftmba.ucdavis.edu/post/colors"
+  },
+  "ucsb.edu": {
+    "name": "University of California, Santa Barbara",
+    "primary": "#003660",
+    "secondary": "#FEBC11",
+    "source": "https://brand.ucsb.edu/visual-identity/color"
+  },
+  "ucr.edu": {
+    "name": "University of California, Riverside",
+    "primary": "#003DA5",
+    "secondary": "#FFB81C",
+    "source": "https://brand.ucr.edu/ucr-colors-old"
+  },
+  "ucsc.edu": {
+    "name": "University of California, Santa Cruz",
+    "primary": "#003C6C",
+    "secondary": "#FDC700",
+    "source": "https://communications.ucsc.edu/brand-overview/color/"
+  },
+  "sdsu.edu": {
+    "name": "San Diego State University",
+    "primary": "#D41736",
+    "secondary": "#A6192E",
+    "source": "https://brand.sdsu.edu/identity/design-elements/colors"
+  },
+  "sjsu.edu": {
+    "name": "San Jose State University",
+    "primary": "#0055A2",
+    "secondary": "#E5A823",
+    "source": "https://www.sjsu.edu/communications/brand/visual-style/color/web.php"
+  },
+  "csun.edu": {
+    "name": "California State University, Northridge",
+    "primary": "#D00D2D",
+    "secondary": "#000000",
+    "source": "https://www.csun.edu/sites/default/files/01_CSUN%20Identity%20Guidelines_0.pdf"
+  },
+  "fullerton.edu": {
+    "name": "California State University, Fullerton",
+    "primary": "#00244E",
+    "secondary": "#FF7900",
+    "source": "https://brand.fullerton.edu/colors/"
+  },
+  "unt.edu": {
+    "name": "University of North Texas",
+    "primary": "#00853E",
+    "secondary": null,
+    "source": "https://identityguide.unt.edu/create-our-look/color"
+  },
+  "utsa.edu": {
+    "name": "The University of Texas at San Antonio",
+    "primary": "#F15A22",
+    "secondary": "#032044",
+    "source": "https://www.utsa.edu/marcomstudio/resources/style-guides/brand-guidelines/color.html"
+  },
+  "utdallas.edu": {
+    "name": "University of Texas at Dallas",
+    "primary": "#154734",
+    "secondary": "#E87500",
+    "source": "https://brand.utdallas.edu/graphics-visual-identity/color-palette/"
+  },
+  "uta.edu": {
+    "name": "University of Texas at Arlington",
+    "primary": "#0064B1",
+    "secondary": "#F58025",
+    "source": "https://www.uta.edu/administration/mme/brand-standards/logo-design-identity/color-standards"
+  },
+  "utrgv.edu": {
+    "name": "The University of Texas at Rio Grande Valley",
+    "primary": "#CB4900",
+    "secondary": "#646469",
+    "source": "https://www.utrgv.edu/brand/identity/color-palette/index.htm"
+  },
+  "txstate.edu": {
+    "name": "Texas State University",
+    "primary": "#501214",
+    "secondary": "#AC9155",
+    "source": "https://brand.txstate.edu/assets/colors.html"
+  },
+  "smu.edu": {
+    "name": "Southern Methodist University",
+    "primary": "#354CA1",
+    "secondary": "#CC0035",
+    "source": "https://www.smu.edu/brand/color-palette"
+  },
+  "gsu.edu": {
+    "name": "Georgia State University",
+    "primary": "#0039A6",
+    "secondary": "#CC0000",
+    "source": "https://commkit.gsu.edu/website-management/web-color-guidelines/"
+  },
+  "kennesaw.edu": {
+    "name": "Kennesaw State University",
+    "primary": "#FFC629",
+    "secondary": "#000000",
+    "source": "https://campus.kennesaw.edu/offices-services/stratcomm/branding/logo-color-guidelines/color-guidelines.php"
+  },
+  "georgiasouthern.edu": {
+    "name": "Georgia Southern University",
+    "primary": "#001344",
+    "secondary": "#9A8348",
+    "source": "https://www.georgiasouthern.edu/offices/communications-marketing/wordpress/guidelines/web-colors-fonts"
+  },
+  "augusta.edu": {
+    "name": "Augusta University",
+    "primary": "#002F55",
+    "secondary": "#A5ACAF",
+    "source": "https://brand.augusta.edu/color/"
+  },
+  "ung.edu": {
+    "name": "University of North Georgia",
+    "primary": "#1F3D7C",
+    "secondary": "#FFC62F",
+    "source": "https://ung.edu/strategic-communications-marketing/branding/visual-identity-assets.php"
+  },
+  "fau.edu": {
+    "name": "Florida Atlantic University",
+    "primary": "#003366",
+    "secondary": "#CC0000",
+    "source": "https://www.fau.edu/styleguide/colors/"
+  },
+  "unf.edu": {
+    "name": "University of North Florida",
+    "primary": "#0A233F",
+    "secondary": "#A7A8A9",
+    "source": "https://www.unf.edu/brand/colors.html"
+  },
+  "uwf.edu": {
+    "name": "University of West Florida",
+    "primary": "#00205B",
+    "secondary": "#00A346",
+    "source": "https://uwf.edu/brand/color/"
+  },
+  "nova.edu": {
+    "name": "Nova Southeastern University",
+    "primary": "#003893",
+    "secondary": null,
+    "source": "https://www.nova.edu/brand/colors.html"
+  },
+  "sfasu.edu": {
+    "name": "Stephen F. Austin State University",
+    "primary": "#5F259F",
+    "secondary": null,
+    "source": "https://www.sfasu.edu/umc/brand-toolkit"
+  },
+  "usm.edu": {
+    "name": "University of Southern Mississippi",
+    "primary": "#FFAB00",
+    "secondary": "#000000",
+    "source": "https://www.usm.edu/university-communications/files/usm_graphic_standards_september2020.pdf"
+  },
+  "mtsu.edu": {
+    "name": "Middle Tennessee State University",
+    "primary": "#007BC3",
+    "secondary": "#004776",
+    "source": "https://www.mtsu.edu/web-training/fonts/"
+  },
+  "tnstate.edu": {
+    "name": "Tennessee State University",
+    "primary": "#00539F",
+    "secondary": null,
+    "source": "https://www.tnstate.edu/publications/documents/styleguide.pdf"
+  },
+  "etsu.edu": {
+    "name": "East Tennessee State University",
+    "primary": "#00053E",
+    "secondary": "#FFC72C",
+    "source": "https://www.etsu.edu/brand/design.php"
+  },
+  "tntech.edu": {
+    "name": "Tennessee Technological University",
+    "primary": "#753BBD",
+    "secondary": "#FFD100",
+    "source": "https://www.tntech.edu/ocm/color.php"
+  },
+  "utc.edu": {
+    "name": "University of Tennessee at Chattanooga",
+    "primary": "#112E51",
+    "secondary": "#FDB736",
+    "source": "https://www.utc.edu/sites/default/files/2022-01/UTC-Color-Reference.pdf"
+  },
+  "apsu.edu": {
+    "name": "Austin Peay State University",
+    "primary": "#C41E3A",
+    "secondary": "#000000",
+    "source": "https://www.apsu.edu/identity/colors.php"
+  },
+  "louisiana.edu": {
+    "name": "University of Louisiana at Lafeyette",
+    "primary": "#CE181E",
+    "secondary": null,
+    "source": "https://louisiana.edu/web/tutorials-resources/web-style-guide/approved-web-colors"
+  },
+  "latech.edu": {
+    "name": "Louisiana Tech University",
+    "primary": "#003087",
+    "secondary": "#CB333B",
+    "source": "https://brand.latech.edu/identity-standards/university-colors/"
+  },
+  "uno.edu": {
+    "name": "University of New Orleans",
+    "primary": "#003366",
+    "secondary": "#666666",
+    "source": "https://www.uno.edu/strategic-marketing/identity-standards"
+  },
+  "ulm.edu": {
+    "name": "University of Louisiana at Monroe",
+    "primary": "#840029",
+    "secondary": "#FDB913",
+    "source": "https://www.ulm.edu/pharmacy/documents/ospa/studentdresscode.pdf"
+  },
+  "mcneese.edu": {
+    "name": "McNeese State University",
+    "primary": "#00477F",
+    "secondary": "#FFD520",
+    "source": "https://www.mcneese.edu/wp-content/uploads/2023/04/McNeese-Branding-Overview-7.24.pdf"
+  },
+  "mercer.edu": {
+    "name": "Mercer University",
+    "primary": "#F76800",
+    "secondary": "#222222",
+    "source": "https://www.mercer.edu/university-branding/typography-and-colors/"
+  },
+  "utm.edu": {
+    "name": "University of Tennessee, Martin",
+    "primary": "#0B2341",
+    "secondary": "#FF8200",
+    "source": "https://www.utm.edu/offices-and-services/office-of-university-relations/_media/UR_StyleGuide_24-1.pdf"
+  },
+  "rhodes.edu": {
+    "name": "Rhodes College",
+    "primary": "#C4022B",
+    "secondary": "#000000",
+    "source": "https://www.rhodes.edu/sites/default/files/RHODES_Brand_Standards_2020.pdf"
+  },
+  "fit.edu": {
+    "name": "Florida Institute of Technology",
+    "primary": "#770000",
+    "secondary": "#AB946C",
+    "source": "https://www.fit.edu/marketing-and-communications/marcomm-toolbox/graphic-identity-standards/color-palette-and-typography/"
+  },
+  "gwu.edu": {
+    "name": "George Washington University",
+    "primary": "#033C5A",
+    "secondary": "#AA9868",
+    "source": "https://communications.gwu.edu/visual-identity/color-palette"
+  },
+  "american.edu": {
+    "name": "American University",
+    "primary": "#004FA2",
+    "secondary": "#E0263C",
+    "source": "https://www.american.edu/ucm/creative-style-guide.cfm"
+  },
+  "tufts.edu": {
+    "name": "Tufts University",
+    "primary": "#3E8EDE",
+    "secondary": "#63493A",
+    "source": "https://brand.tufts.edu/guidelines/color"
+  },
+  "uchicago.edu": {
+    "name": "University of Chicago",
+    "primary": "#800000",
+    "secondary": "#767676",
+    "source": "https://news.uchicago.edu/sites/default/files/UCM_UniversityIdentityGuidelines_2-2020.pdf"
+  },
+  "depaul.edu": {
+    "name": "DePaul University",
+    "primary": "#003DA5",
+    "secondary": "#CE112D",
+    "source": "https://resources.depaul.edu/brand/brand-guidelines/colors/Pages/default.aspx"
+  },
+  "luc.edu": {
+    "name": "Loyola University Chicago",
+    "primary": "#5A0722",
+    "secondary": "#EAAA00",
+    "source": "https://www.luc.edu/umc/brandidentity/brandcomponents/colors/"
+  },
+  "uic.edu": {
+    "name": "University of Illinois Chicago",
+    "primary": "#D50032",
+    "secondary": "#001E62",
+    "source": "https://brand.uic.edu/visual-identity/color/"
+  },
+  "niu.edu": {
+    "name": "Northern Illinois University",
+    "primary": "#C8102E",
+    "secondary": "#000000",
+    "source": "https://www.niu.edu/communication-standards/visual/colors.shtml"
+  },
+  "siu.edu": {
+    "name": "Southern Illinois University-Carbondale",
+    "primary": "#6C0633",
+    "secondary": "#000000",
+    "source": "https://ucomm.siu.edu/brand/visuals/colors.php"
+  },
+  "wmich.edu": {
+    "name": "Western Michigan University",
+    "primary": "#F1C500",
+    "secondary": "#532E1F",
+    "source": "https://wmich.edu/marcom/creative/visual-identity/color-guide"
+  },
+  "cmich.edu": {
+    "name": "Central Michigan University",
+    "primary": "#6A0032",
+    "secondary": "#FFC82E",
+    "source": "https://www.cmich.edu/offices-departments/university-communications/brand-guidelines/visual-language/color-palette"
+  },
+  "wayne.edu": {
+    "name": "Wayne State University",
+    "primary": "#0C5449",
+    "secondary": "#FFCC33",
+    "source": "https://universityrelations.wayne.edu/docs/identity-style-guide.pdf"
+  },
+  "ohio.edu": {
+    "name": "Ohio University",
+    "primary": "#00694E",
+    "secondary": "#024230",
+    "source": "https://www.ohio.edu/ucm/ohio-brand/colors"
+  },
+  "bgsu.edu": {
+    "name": "Bowling Green State University",
+    "primary": "#FD5000",
+    "secondary": "#4F2C1D",
+    "source": "https://www.bgsu.edu/marketing-and-communications/bgsu-graphic-standards-manual/the-official-identity-colors.html"
+  },
+  "uakron.edu": {
+    "name": "University of Akron",
+    "primary": "#070C72",
+    "secondary": "#9D9362",
+    "source": "https://www.uakron.edu/im/resources/brand/colors"
+  },
+  "miamioh.edu": {
+    "name": "Miami University of Ohio",
+    "primary": "#C41230",
+    "secondary": null,
+    "source": "https://miamioh.edu/brand/style/"
+  },
+  "udayton.edu": {
+    "name": "University of Dayton",
+    "primary": "#003087",
+    "secondary": "#CE0037",
+    "source": "https://udayton.edu/brand/colors.php"
+  },
+  "dartmouth.edu": {
+    "name": "Dartmouth College",
+    "primary": "#00693E",
+    "secondary": "#12312B",
+    "source": "https://communications.dartmouth.edu/guides-and-tools/design-guidelines/dartmouth-colors"
+  },
+  "cmu.edu": {
+    "name": "Carnegie Mellon University",
+    "primary": "#C41230",
+    "secondary": "#6D6E71",
+    "source": "https://brand.cmu.edu/visual-identity/colors"
+  },
+  "rit.edu": {
+    "name": "Rochester Institute of Technology",
+    "primary": "#F76902",
+    "secondary": null,
+    "source": "https://www.rit.edu/brandportal/colors"
+  },
+  "buffalo.edu": {
+    "name": "State University of New York at Buffalo",
+    "primary": "#005BBB",
+    "secondary": "#FFC72C",
+    "source": "https://www.buffalo.edu/brand/creative/color/color-palette.html"
+  },
+  "stonybrook.edu": {
+    "name": "State University of New York at Stony Brook",
+    "primary": "#990000",
+    "secondary": null,
+    "source": "https://www.stonybrook.edu/sbu-brand/design-visual-identity/colors.php"
+  },
+  "binghamton.edu": {
+    "name": "State University of New York at Binghamton",
+    "primary": "#005A43",
+    "secondary": null,
+    "source": "https://www.binghamton.edu/communications-and-marketing/branding/colors.html"
+  },
+  "albany.edu": {
+    "name": "State University of New York at Albany",
+    "primary": "#46166B",
+    "secondary": "#EEB211",
+    "source": "https://www.albany.edu/style-guide/colors"
+  },
+  "rochester.edu": {
+    "name": "University of Rochester",
+    "primary": "#001E5F",
+    "secondary": "#FFD82B",
+    "source": "https://brand.rochester.edu/visual-identity/color-system/"
+  },
+  "drexel.edu": {
+    "name": "Drexel University",
+    "primary": "#07294D",
+    "secondary": "#FFC600",
+    "source": "https://drexel.edu/identity/drexel/color"
+  },
+  "villanova.edu": {
+    "name": "Villanova University",
+    "primary": "#002664",
+    "secondary": "#847248",
+    "source": "https://www.villanova.edu/university/comm-marketing/guidelines/villanova-visual-identity/university-colors.html"
+  },
+  "lehigh.edu": {
+    "name": "Lehigh University",
+    "primary": "#502D0E",
+    "secondary": "#FFE41E",
+    "source": "https://wms-styleguide.lehigh.edu/components/detail/colors"
+  },
+  "gmu.edu": {
+    "name": "George Mason University",
+    "primary": "#005239",
+    "secondary": "#FFC733",
+    "source": "https://brand.gmu.edu/brand-guide/brand-colors"
+  },
+  "vcu.edu": {
+    "name": "Virginia Commonwealth University",
+    "primary": "#FFB300",
+    "secondary": "#000000",
+    "source": "https://compass.vcu.edu/guide/colors/"
+  },
+  "odu.edu": {
+    "name": "Old Dominion University",
+    "primary": "#043657",
+    "secondary": "#828A8F",
+    "source": "https://www.odu.edu/university-communications/brand-toolkit/palette-fonts"
+  },
+  "jmu.edu": {
+    "name": "James Madison University",
+    "primary": "#450084",
+    "secondary": "#CBB677",
+    "source": "https://www.jmu.edu/identity/our-style/color.shtml"
+  },
+  "wm.edu": {
+    "name": "College of William and Mary",
+    "primary": "#004E38",
+    "secondary": "#B79257",
+    "source": "https://brand.wm.edu/index.php/university-colors/"
+  },
+  "radford.edu": {
+    "name": "Radford University",
+    "primary": "#C2011B",
+    "secondary": "#003C71",
+    "source": "https://www.radford.edu/marketing-communication/_documents/radford-brand-guide.pdf"
+  },
+  "ecu.edu": {
+    "name": "East Carolina University",
+    "primary": "#592A8A",
+    "secondary": "#FEC923",
+    "source": "https://brand.ecu.edu/"
+  },
+  "uncc.edu": {
+    "name": "University of North Carolina at Charlotte",
+    "primary": "#005035",
+    "secondary": "#A49665",
+    "source": "https://advancement.uncc.edu/university-communications/design-toolkit/color-palette"
+  },
+  "uncg.edu": {
+    "name": "The University of North Carolina at Greensboro",
+    "primary": "#0F2044",
+    "secondary": "#FFB71B",
+    "source": "https://uc.uncg.edu/brand-guide/university-colors/"
+  },
+  "uncw.edu": {
+    "name": "University of North Carolina at Wilmington",
+    "primary": "#007680",
+    "secondary": null,
+    "source": "https://www.uncw.edu/news/support-services/web-publishing/2025/09/branding-updates-and-web-impacts"
+  },
+  "appstate.edu": {
+    "name": "Appalachian State University",
+    "primary": "#FFCC00",
+    "secondary": "#222222",
+    "source": "https://commtoolbox.appstate.edu/style/colors"
+  },
+  "wcu.edu": {
+    "name": "Western Carolina University",
+    "primary": "#592C88",
+    "secondary": "#C1A875",
+    "source": "https://www.wcu.edu/discover/communications-and-marketing/wcu-brand/visual-identity/wcu-colors.aspx"
+  },
+  "ncat.edu": {
+    "name": "North Carolina A&T State University",
+    "primary": "#004684",
+    "secondary": "#FDB927",
+    "source": "https://relations.ncat.edu/branding/color-palette.html"
+  },
+  "furman.edu": {
+    "name": "Furman University",
+    "primary": "#582C83",
+    "secondary": "#54585A",
+    "source": "https://www.furman.edu/wp-content/uploads/2019/Brand-Standards-Guide.pdf"
+  },
+  "coastal.edu": {
+    "name": "Coastal Carolina University",
+    "primary": "#006F71",
+    "secondary": "#A27752",
+    "source": "https://www.coastal.edu/media/2024siteassets/contentassets/documents/universitymarketingandcommunication/Coastal_Carolina_University_Brand_Guide_2024.pdf"
+  },
+  "winthrop.edu": {
+    "name": "Winthrop University",
+    "primary": "#6B0D0E",
+    "secondary": "#F8C23A",
+    "source": "https://www.winthrop.edu/ucm/visual-identity/colors/primary-colors.aspx"
+  },
+  "byu.edu": {
+    "name": "Brigham Young University",
+    "primary": "#002E5D",
+    "secondary": null,
+    "source": "https://brand.byu.edu/brand-guidelines/colors/"
+  },
+  "weber.edu": {
+    "name": "Weber State University",
+    "primary": "#492365",
+    "secondary": "#4A494D",
+    "source": "https://www.weber.edu/brand/colors.html"
+  },
+  "wichita.edu": {
+    "name": "Wichita State University",
+    "primary": "#FFDB00",
+    "secondary": "#000000",
+    "source": "https://www.wichita.edu/services/strategic_communications/brand_standards/_documents/visual-standards-2022.pdf"
+  },
+  "und.edu": {
+    "name": "University of North Dakota",
+    "primary": "#009A44",
+    "secondary": null,
+    "source": "https://campus.und.edu/brand/color.html"
+  },
+  "ndsu.edu": {
+    "name": "North Dakota State University",
+    "primary": "#00583D",
+    "secondary": "#FFC425",
+    "source": "https://www.ndsu.edu/sites/default/files/documents/NDSU-Brand-Basics.pdf"
+  },
+  "sdstate.edu": {
+    "name": "South Dakota State University",
+    "primary": "#0033A0",
+    "secondary": "#FFD100",
+    "source": "https://www.sdstate.edu/university-marketing-communications/sdstate-graphic-identity-standards/university-colors"
+  },
+  "montana.edu": {
+    "name": "Montana State University - Bozeman",
+    "primary": "#162960",
+    "secondary": "#F4B425",
+    "source": "https://www.montana.edu/marketing/logo-use-guide.html"
+  },
+  "umt.edu": {
+    "name": "University of Montana",
+    "primary": "#70002E",
+    "secondary": null,
+    "source": "https://www.umt.edu/brand/colors.php"
+  },
+  "uidaho.edu": {
+    "name": "University of Idaho",
+    "primary": "#F1B300",
+    "secondary": "#808080",
+    "source": "https://www.uidaho.edu/brand"
+  },
+  "pdx.edu": {
+    "name": "Portland State University",
+    "primary": "#6D8D24",
+    "secondary": "#213921",
+    "source": "https://www.pdx.edu/university-communications/tools-and-templates/brand-colors"
+  },
+  "wwu.edu": {
+    "name": "Western Washington University",
+    "primary": "#003F87",
+    "secondary": "#FFC61E",
+    "source": "https://marcom.wwu.edu/files/2021-01/8.5x11-coated-3up%20(1).pdf"
+  },
+  "unr.edu": {
+    "name": "University of Nevada, Reno",
+    "primary": "#041E42",
+    "secondary": "#8A8D8F",
+    "source": "https://med.unr.edu/marketing-and-communications/brand-guide/brand-style"
+  },
+  "csusb.edu": {
+    "name": "California State University, San Bernardino",
+    "primary": "#0065BD",
+    "secondary": null,
+    "source": "https://www.csusb.edu/sites/default/files/upload/file/CSUSB-Brand-Manual.pdf"
+  },
+  "fresnostate.edu": {
+    "name": "California State University, Fresno",
+    "primary": "#C41230",
+    "secondary": "#13284C",
+    "source": "https://marcomm.fresnostate.edu/color.html"
+  },
+  "csuchico.edu": {
+    "name": "California State University, Chico",
+    "primary": "#9D2235",
+    "secondary": "#75787B",
+    "source": "https://www.csuchico.edu/about/brand/visual-identity/colors-and-typefaces.shtml"
+  },
+  "nmsu.edu": {
+    "name": "New Mexico State University",
+    "primary": "#8C0B42",
+    "secondary": null,
+    "source": "https://brand.nmsu.edu/color/index.html"
+  },
+  "mines.edu": {
+    "name": "Colorado School of Mines",
+    "primary": "#21314D",
+    "secondary": "#D2492A",
+    "source": "https://mines.edu/webcentral/colors"
+  },
+  "umbc.edu": {
+    "name": "University of Maryland, Baltimore County",
+    "primary": "#FDB515",
+    "secondary": "#000000",
+    "source": "https://styleguide.umbc.edu/umbc-colors/"
+  },
+  "towson.edu": {
+    "name": "Towson University",
+    "primary": "#FFBB00",
+    "secondary": "#3C3C3C",
+    "source": "https://www.towson.edu/brand/visual-guidelines/color.html"
+  },
+  "howard.edu": {
+    "name": "Howard University",
+    "primary": "#003A63",
+    "secondary": "#E51937",
+    "source": "https://ouc.howard.edu/our-services/creative-branding-multimedia/colors-typography"
+  },
+  "udel.edu": {
+    "name": "University of Delaware",
+    "primary": "#00539F",
+    "secondary": "#FFD200",
+    "source": "https://www.udel.edu/content/dam/udelImages/ocm/style-guide/signage-style-guide.pdf"
+  },
+  "uconn.edu": {
+    "name": "University of Connecticut",
+    "primary": "#000E2F",
+    "secondary": "#7C878E",
+    "source": "https://brand.uconn.edu/guidelines-usage/color-palette/"
+  },
+  "uvm.edu": {
+    "name": "University of Vermont",
+    "primary": "#154734",
+    "secondary": "#FFD100",
+    "source": "https://www.uvm.edu/stratcomm/brand/color-palette"
+  },
+  "umaine.edu": {
+    "name": "University of Maine",
+    "primary": "#082E58",
+    "secondary": "#79BDE8",
+    "source": "https://umaine.edu/marketingandcommunications/brand/visual-identity/"
+  },
+  "caltech.edu": {
+    "name": "California Institute of Technology",
+    "primary": "#FF6C0C",
+    "secondary": null,
+    "source": "https://identity.caltech.edu/colors"
+  },
+  "scu.edu": {
+    "name": "Santa Clara University",
+    "primary": "#A32035",
+    "secondary": "#862633",
+    "source": "https://www.scu.edu/umc/brand/colors/"
+  },
+  "lmu.edu": {
+    "name": "Loyola Marymount University",
+    "primary": "#0076A5",
+    "secondary": "#AB0C2F",
+    "source": "https://brand.lmu.edu/identitystandards/colors/"
+  },
+  "pepperdine.edu": {
+    "name": "Pepperdine University",
+    "primary": "#1E2859",
+    "secondary": "#E65526",
+    "source": "https://community.pepperdine.edu/imc/resources/style-guide/official-colors/"
+  },
+  "calpoly.edu": {
+    "name": "California Polytechnic State University, San Luis Obispo",
+    "primary": "#154734",
+    "secondary": null,
+    "source": "https://ucm.calpoly.edu/color-guidelines"
+  },
+  "ucsf.edu": {
+    "name": "University of California, San Francisco",
+    "primary": "#052049",
+    "secondary": "#FEB80A",
+    "source": "https://identity.ucsf.edu/brand-guide/color"
+  },
+  "tsu.edu": {
+    "name": "Texas Southern University",
+    "primary": "#75263B",
+    "secondary": null,
+    "source": "https://tsu.edu/about/administration/marketing-and-communications/documents/tsu-brand-standard-guidelines_0322.pdf"
+  },
+  "pvamu.edu": {
+    "name": "Prairie View A&M University",
+    "primary": "#582C83",
+    "secondary": "#EAAA00",
+    "source": "https://www.pvamu.edu/marcomm/resources/colors/"
+  },
+  "trinity.edu": {
+    "name": "Trinity University",
+    "primary": "#870A0F",
+    "secondary": null,
+    "source": "https://trinity.edu/brand/visual/colors"
+  },
+  "acu.edu": {
+    "name": "Abilene Christian University",
+    "primary": "#4F2170",
+    "secondary": null,
+    "source": "https://acu.edu/wp-content/uploads/2024/10/ACU_Branding-and-Editorial-style-guide.pdf"
+  },
+  "uca.edu": {
+    "name": "University of Central Arkansas",
+    "primary": "#582C83",
+    "secondary": "#7C878E",
+    "source": "https://uca.edu/toolkit/official-colors/"
+  },
+  "astate.edu": {
+    "name": "Arkansas State University",
+    "primary": "#CC092F",
+    "secondary": "#000000",
+    "source": "http://wt-dc-prod.astate.edu/a/marketing/pcs/graphic-standards/logos-colors-fonts/university-colors/"
+  },
+  "ualr.edu": {
+    "name": "University of Arkansas - Little Rock",
+    "primary": "#6E2639",
+    "secondary": "#A7A9AC",
+    "source": "https://ualr.edu/communications/colors/"
+  },
+  "southernct.edu": {
+    "name": "Southern Connecticut State University",
+    "primary": "#003399",
+    "secondary": null,
+    "source": "https://www.southernct.edu/icm/branding/visual-identity"
+  },
+  "hawaii.edu": {
+    "name": "University of Hawaii System",
+    "primary": "#B3995D",
+    "secondary": null,
+    "source": "https://www.hawaii.edu/offices/communications/standards/graphics-standards/signatures/"
+  },
+  "iup.edu": {
+    "name": "Indiana University of Pennsylvania",
+    "primary": "#9D2235",
+    "secondary": "#5E5F5F",
+    "source": "https://www.iup.edu/marcom/visual-guide/index.html"
+  },
+  "wcupa.edu": {
+    "name": "West Chester University of Pennsylvania",
+    "primary": "#512D6D",
+    "secondary": "#FFC72C",
+    "source": "https://www.wcupa.edu/brand/colors.aspx"
+  },
+  "usd.edu": {
+    "name": "University of South Dakota",
+    "primary": "#D21533",
+    "secondary": null,
+    "source": "https://td.usd.edu/TDClient/33/Portal/KB/ArticleDet?ID=5155"
+  },
+  "mnsu.edu": {
+    "name": "Minnesota State University, Mankato",
+    "primary": "#49306E",
+    "secondary": "#FEBD11",
+    "source": "https://mankato.mnsu.edu/brand-hub/design-resources/colors/"
+  },
+  "bsu.edu": {
+    "name": "Ball State University",
+    "primary": "#BA0C2F",
+    "secondary": "#54585A",
+    "source": "https://www.bsu.edu/about/administrativeoffices/marketing-communications/brand-resources/colors"
+  },
+  "isu.edu": {
+    "name": "Idaho State University",
+    "primary": "#F47920",
+    "secondary": null,
+    "source": "https://www.isu.edu/brand/design/colors/"
+  },
+  "morgan.edu": {
+    "name": "Morgan State University",
+    "primary": "#1B4383",
+    "secondary": "#F47937",
+    "source": "https://www1.morgan.edu/toolkit/official-colors/"
+  },
+  "valpo.edu": {
+    "name": "Valparaiso University",
+    "primary": "#5C3000",
+    "secondary": "#F5B80A",
+    "source": "https://www.valpo.edu/about/marcom/brand/brand-tool-kit/color-palettes/"
+  },
+  "butler.edu": {
+    "name": "Butler University",
+    "primary": "#13294B",
+    "secondary": null,
+    "source": "https://www.butler.edu/marketing/brand/color-palette/"
+  },
+  "seattleu.edu": {
+    "name": "Seattle University",
+    "primary": "#AA0000",
+    "secondary": null,
+    "source": "https://www.seattleu.edu/marcom/brand/colors-and-icons/"
+  },
+  "usfca.edu": {
+    "name": "University of San Francisco",
+    "primary": "#00543C",
+    "secondary": "#FDBB30",
+    "source": "https://myusf.usfca.edu/sites/default/files/documents/OMC/graphic-standards-manual.pdf"
+  },
+  "nsula.edu": {
+    "name": "Northwestern State University",
+    "primary": "#663399",
+    "secondary": "#FF6600",
+    "source": "https://documentproviderviewer.nsula.edu/?id=11285"
+  },
+  "mc.edu": {
+    "name": "Mississippi College",
+    "primary": "#0C2340",
+    "secondary": "#C99700",
+    "source": "https://www.mc.edu/offices/marketing/university-branding/brand-toolkit/visual-guidelines/colors"
+  },
+  "alcorn.edu": {
+    "name": "Alcorn State University",
+    "primary": "#512D6D",
+    "secondary": "#CC8A00",
+    "source": "https://www.alcorn.edu/marketing-and-communication/identity-standards/"
+  },
+  "columbusstate.edu": {
+    "name": "Columbus State University",
+    "primary": "#003359",
+    "secondary": "#C60C30",
+    "source": "https://www.columbusstate.edu/scm/_docs/CSU_Brand_Guidelines-1.pdf"
+  },
+  "gcsu.edu": {
+    "name": "Georgia College",
+    "primary": "#1F3D7B",
+    "secondary": "#245C4F",
+    "source": "https://my.gcsu.edu/sites/default/files/2024-09/GCSU%20Art%20Sheet.pdf"
+  },
+  "sewanee.edu": {
+    "name": "Sewanee, University of the South",
+    "primary": "#582C83",
+    "secondary": "#FFB81C",
+    "source": "https://new.sewanee.edu/offices/university-offices/marketing-communications/graphic-identity-standards/"
+  },
+  "austincc.edu": {
+    "name": "Austin Community College",
+    "primary": "#4D1979",
+    "secondary": "#00B2A9",
+    "source": "https://brand.austincc.edu/acc-brand-visual-identity/acc-official-colors/"
+  },
+  "lonestar.edu": {
+    "name": "Lone Star College System",
+    "primary": "#003768",
+    "secondary": "#B30838",
+    "source": "https://www.lonestar.edu/college-departments/marketing-communications/brand-and-logo-styleguide.htm"
+  },
+  "valenciacollege.edu": {
+    "name": "Valencia College",
+    "primary": "#BF311A",
+    "secondary": "#FDB913",
+    "source": "https://valenciacollege.edu/brand/color-palettes.php"
+  },
+  "mdc.edu": {
+    "name": "Miami Dade College",
+    "primary": "#0032A0",
+    "secondary": "#5B6770",
+    "source": "https://www.mdc.edu/media/miami-dade-college/marketing-communications/documents/Official_Design_Guidelines_2025.pdf"
+  },
+  "broward.edu": {
+    "name": "Broward College",
+    "primary": "#005596",
+    "secondary": null,
+    "source": "https://www.broward.edu/design-system/colors.html"
+  },
+  "dcccd.edu": {
+    "name": "Dallas County Community College",
+    "primary": "#E52626",
+    "secondary": "#003385",
+    "source": "https://dcccd.edu/about/style/pages/collegecolors.aspx"
+  }
+}

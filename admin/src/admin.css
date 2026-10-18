@@ -1,0 +1,39 @@
+/* Admin console extras. Tokens and base components come from the web design system (data-theme="ops"). */
+body { background: var(--bg); color: var(--ink); }
+.ops-center { min-height: 100dvh; display: grid; place-items: center; padding: var(--s-4); }
+.ops-center .window { width: min(26rem, 100%); }
+.ops-shell { max-width: 72rem; margin: 0 auto; padding: var(--s-4); display: grid; gap: var(--s-4); }
+.ops-top { display: flex; align-items: center; justify-content: space-between; gap: var(--s-3); flex-wrap: wrap; border-bottom: 1px solid var(--border); padding-bottom: var(--s-3); }
+.ops-brand { font-weight: 700; letter-spacing: 0.02em; }
+.ops-brand span { font-family: var(--font-mono); color: var(--accent-strong); margin-left: var(--s-2); font-size: var(--text-xs); }
+.ops-user { display: flex; gap: var(--s-3); align-items: center; font-size: var(--text-sm); color: var(--muted); }
+.ops-tabs { display: flex; gap: var(--s-2); flex-wrap: wrap; }
+.ops-tabs button { min-height: 2.25rem; padding: 0 var(--s-4); border: 1px solid var(--border-strong); background: transparent; color: var(--ink); border-radius: var(--radius-sm); cursor: pointer; font: inherit; font-size: var(--text-sm); }
+.ops-tabs button[aria-selected='true'] { background: var(--accent-tint); border-color: var(--accent-strong); color: var(--accent-strong); font-weight: 650; }
+.ops-grid { display: grid; gap: var(--s-3); grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr)); }
+.ops-stat { padding: var(--s-4); border: 1px solid var(--border); border-radius: var(--radius); background: var(--surface); }
+.ops-stat b { display: block; font-size: var(--text-xl); font-variant-numeric: tabular-nums; }
+.ops-stat span { font-size: var(--text-sm); color: var(--muted); }
+.ops-toolbar { display: flex; gap: var(--s-2); flex-wrap: wrap; align-items: center; }
+.ops-toolbar select { min-height: 2.25rem; }
+.ops-list { display: grid; gap: var(--s-2); }
+.ops-row { border: 1px solid var(--border); border-radius: var(--radius); background: var(--surface); }
+.ops-row-head { display: flex; justify-content: space-between; align-items: center; gap: var(--s-3); padding: var(--s-3) var(--s-4); flex-wrap: wrap; }
+.ops-row-head .meta { display: flex; gap: var(--s-3); align-items: baseline; flex-wrap: wrap; }
+.ops-row-head .domain { font-family: var(--font-mono); font-size: var(--text-xs); color: var(--muted); }
+.ops-row-body { padding: var(--s-3) var(--s-4) var(--s-4); border-top: 1px solid var(--border); display: grid; gap: var(--s-3); }
+.ops-req { font-size: var(--text-sm); display: grid; gap: 2px; padding: var(--s-2) 0; border-bottom: 1px dashed var(--border); }
+.ops-req:last-child { border-bottom: 0; }
+.ops-form { display: grid; gap: var(--s-3); }
+.ops-form .field-row { align-items: end; }
+.ops-sub { display: grid; gap: var(--s-2); padding: var(--s-3); background: var(--surface-2); border-radius: var(--radius-sm); }
+.ops-actions { display: flex; gap: var(--s-2); flex-wrap: wrap; }
+.ops-qr { display: block; margin: 0 auto; width: 12rem; height: 12rem; background: #fff; padding: 8px; border-radius: var(--radius-sm); }
+.ops-secret { font-family: var(--font-mono); font-size: var(--text-sm); word-break: break-all; padding: var(--s-2); background: var(--surface-2); border-radius: var(--radius-sm); user-select: all; }
+.ops-msg-err { color: var(--danger); font-size: var(--text-sm); }
+.ops-msg-ok { color: var(--ok); font-size: var(--text-sm); }
+.ops-table { width: 100%; border-collapse: collapse; font-size: var(--text-sm); }
+.ops-table th, .ops-table td { text-align: left; padding: var(--s-2); border-bottom: 1px solid var(--border); vertical-align: top; }
+.ops-table th { color: var(--muted); font-weight: 600; }
+.mono { font-family: var(--font-mono); }
+.ops-h1 { font-size: var(--text-lg); margin: 0; }

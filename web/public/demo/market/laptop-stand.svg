@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" role="img" aria-label="Laptop stand">
+<defs><filter id="b" x="-20%" y="-50%" width="140%" height="200%"><feGaussianBlur stdDeviation="9"/></filter></defs>
+<rect width="640" height="480" fill="#E0F2FE"/>
+<circle cx="520" cy="90" r="120" fill="#BAE6FD" opacity=".55"/>
+<circle cx="90" cy="420" r="90" fill="#BAE6FD" opacity=".4"/>
+<ellipse cx="320" cy="412" rx="190" ry="20" fill="#0F172A" opacity=".16" filter="url(#b)"/>
+<g transform="translate(320 260) scale(1.08) translate(-320 -260)"><defs><linearGradient id="al" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#CBD5E1"/><stop offset="1" stop-color="#94A3B8"/></linearGradient></defs><path d="M170 398 L240 250 L400 250 L470 398 Z" fill="url(#al)" /><rect x="212" y="232" width="216" height="22" rx="10" fill="#E2E8F0" /><rect x="230" y="238" width="180" height="6" rx="3" fill="#fff" opacity=".7"/><path d="M250 250 L222 120 Q222 104 238 104 L402 104 Q418 104 418 120 L390 250 Z" fill="#1E293B" /><path d="M262 240 L240 126 L400 126 L378 240 Z" fill="#818CF8" /><rect x="266" y="142" width="80" height="10" rx="5" fill="#fff" opacity=".7"/><rect x="266" y="162" width="118" height="8" rx="5" fill="#fff" opacity=".45"/><rect x="140" y="392" width="360" height="18" rx="9" fill="#94A3B8" /><rect x="140" y="392" width="360" height="6" rx="3" fill="#CBD5E1" /><path d="M200 396 L252 280" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" opacity=".35"/></g>
+</svg>

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" role="img" aria-label="Headphones">
+<defs><filter id="b" x="-20%" y="-50%" width="140%" height="200%"><feGaussianBlur stdDeviation="9"/></filter></defs>
+<rect width="640" height="480" fill="#E0F2FE"/>
+<circle cx="520" cy="90" r="120" fill="#BAE6FD" opacity=".55"/>
+<circle cx="90" cy="420" r="90" fill="#BAE6FD" opacity=".4"/>
+<ellipse cx="320" cy="412" rx="190" ry="20" fill="#0F172A" opacity=".16" filter="url(#b)"/>
+<g transform="translate(320 260) scale(1.08) translate(-320 -260)"><path d="M170 280 C170 120 470 120 470 280" fill="none" stroke="#334155" stroke-width="22" stroke-linecap="round" stroke-linejoin="round" /><rect x="120" y="250" width="82" height="130" rx="36" fill="#E11D48" /><rect x="438" y="250" width="82" height="130" rx="36" fill="#E11D48" /><rect x="132" y="262" width="28" height="106" rx="14" fill="#FB7185" opacity=".7"/><rect x="450" y="262" width="28" height="106" rx="14" fill="#FB7185" opacity=".7"/></g>
+</svg>

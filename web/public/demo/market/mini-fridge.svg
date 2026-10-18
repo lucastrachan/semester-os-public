@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" role="img" aria-label="Mini fridge">
+<defs><filter id="b" x="-20%" y="-50%" width="140%" height="200%"><feGaussianBlur stdDeviation="9"/></filter></defs>
+<rect width="640" height="480" fill="#FFE4E6"/>
+<circle cx="520" cy="90" r="120" fill="#FECDD3" opacity=".55"/>
+<circle cx="90" cy="420" r="90" fill="#FECDD3" opacity=".4"/>
+<ellipse cx="320" cy="412" rx="190" ry="20" fill="#0F172A" opacity=".16" filter="url(#b)"/>
+<g transform="translate(320 260) scale(1.08) translate(-320 -260)"><rect x="215" y="70" width="210" height="330" rx="22" fill="#94A3B8" /><rect x="225" y="80" width="190" height="100" rx="14" fill="#F1F5F9" /><rect x="225" y="190" width="190" height="200" rx="14" fill="#F8FAFC" /><rect x="238" y="110" width="8" height="40" rx="4" fill="#94A3B8" /><rect x="238" y="220" width="8" height="60" rx="4" fill="#94A3B8" /><rect x="215" y="182" width="210" height="6" rx="0" fill="#94A3B8" /><rect x="250" y="390" width="22" height="14" rx="4" fill="#64748B" /><rect x="368" y="390" width="22" height="14" rx="4" fill="#64748B" /></g>
+</svg>

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" width="96" height="96" fill="none" role="img" aria-label="Class tutor agent">
+  <title>Class tutor agent</title>
+  <path d="M32 19 V26 Q48 33 64 26 V19" fill="currentColor" stroke="#FFFFFF" stroke-width="2" stroke-linejoin="round"/>
+  <polygon points="48,4 78,15 48,26 18,15" fill="currentColor" stroke="#FFFFFF" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M74 16.5 V28" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="74" cy="30" r="3" fill="currentColor"/>
+
+  <rect x="10" y="42" width="6" height="14" rx="3" fill="currentColor"/>
+  <rect x="80" y="42" width="6" height="14" rx="3" fill="currentColor"/>
+  <rect x="16" y="26" width="64" height="46" rx="16" fill="currentColor"/>
+  <rect x="23" y="33" width="50" height="32" rx="11" fill="#FFFFFF"/>
+  <circle cx="38" cy="49" r="4.5" fill="#10131A"/>
+  <circle cx="58" cy="49" r="4.5" fill="#10131A"/>
+  <path d="M41 57 Q48 62 55 57" stroke="#10131A" stroke-width="3" stroke-linecap="round"/>
+  <rect x="28" y="76" width="40" height="16" rx="8" fill="currentColor"/>
+  <rect x="40" y="79" width="16" height="10" rx="3" fill="#FFFFFF"/>
+  <path d="M43 84 H53 M48 81.5 V86.5" stroke="#10131A" stroke-width="1.8" stroke-linecap="round"/>
+</svg>

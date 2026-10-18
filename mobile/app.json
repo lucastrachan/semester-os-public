@@ -1,0 +1,35 @@
+{
+  "expo": {
+    "name": "Semester OS",
+    "slug": "semester-os",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "scheme": "semesteros",
+    "userInterfaceStyle": "automatic",
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.semesteros.app"
+    },
+    "android": {
+      "package": "com.semesteros.app",
+      "predictiveBackGestureEnabled": false,
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#4F46E5"
+      }
+    },
+    "plugins": [
+      "expo-router",
+      "expo-secure-store",
+      "expo-font",
+      "expo-status-bar",
+      [
+        "expo-calendar",
+        {
+          "calendarPermission": "Semester OS adds your class deadlines to your calendar only when you ask it to."
+        }
+      ]
+    ],
+    "icon": "./assets/icon.png"
+  }
+}

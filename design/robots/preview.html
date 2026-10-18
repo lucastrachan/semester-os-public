@@ -1,0 +1,20 @@
+<!doctype html><meta charset="utf-8"><title>Semester OS robots</title>
+<style>
+body{margin:0;font:14px system-ui;display:grid;grid-template-columns:1fr 1fr}
+.p{padding:20px}.l{background:#F4F5F7;color:#12151C}.d{background:#0B0D11;color:#ECEEF3}
+.row{display:flex;gap:18px;align-items:flex-end;flex-wrap:wrap;margin:10px 0 18px}
+figure{margin:0;text-align:center;font-size:11px}figure svg{display:block;margin:0 auto 4px}
+.t0{color:#4F46E5}.t1{color:#0D9488}.t2{color:#D97706}.t3{color:#E11D48}.t4{color:#059669}.t5{color:#0284C7}.t6{color:#7C3AED}.t7{color:#EA580C}
+</style>
+<div class="p l" id="L"></div><div class="p d" id="D"></div>
+<script>
+const names=['chief-of-staff','class-tutor','calendar-sync','planner','books','base','state-building','state-ready','state-error'];
+const sv={};
+Promise.all(names.map(n=>fetch('robot-'+n+'.svg').then(r=>r.text()).then(t=>sv[n]=t))).then(()=>{
+ for(const id of ['L','D']){
+  const el=document.getElementById(id);
+  const mk=(n,size,cls='')=>`<figure class="${cls}">${sv[n].replace('width="96" height="96"',`width="${size}" height="${size}"`)}${n}</figure>`;
+  el.innerHTML='<b>96px</b><div class="row">'+names.map(n=>mk(n,96,'t0')).join('')+'</div><b>24px</b><div class="row">'+names.map(n=>mk(n,24,'t0')).join('')+'</div><b>Tutor in the 8 class colours (64px)</b><div class="row">'+[0,1,2,3,4,5,6,7].map(i=>mk('class-tutor',64,'t'+i)).join('')+'</div>';
+ }
+});
+</script>

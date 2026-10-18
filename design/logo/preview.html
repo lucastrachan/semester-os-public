@@ -1,0 +1,18 @@
+<!doctype html>
+<meta charset="utf-8"><title>Semester OS logo</title>
+<style>
+body{margin:0;font:13px system-ui;background:#fff;color:#12151C}
+.g{display:grid;grid-template-columns:repeat(4,1fr);gap:0}
+.c{padding:16px;display:flex;flex-direction:column;align-items:center;gap:8px;min-height:150px;justify-content:center}
+.l{background:#F4F5F7}.d{background:#0B0D11;color:#ECEEF3}
+img,svg{display:block}
+small{opacity:.7}
+</style>
+<div class="g" id="g"></div>
+<script>
+const files=[['semester-os-mark.svg',96],['semester-os-mark.svg',32],['semester-os-mark.svg',16],['favicon.svg',32],['favicon.svg',16],['app-icon.svg',96],['app-icon-maskable.svg',96],['semester-os-lockup.svg',260,'l'],['semester-os-lockup-on-dark.svg',260,'d'],['semester-os-stacked.svg',150,'l'],['semester-os-stacked-on-dark.svg',150,'d']];
+const inline=[['semester-os-mark-mono.svg','#12151C','l'],['semester-os-mark-mono.svg','#ECEEF3','d'],['semester-os-mark-tint.svg','#0D9488','l'],['semester-os-mark-tint.svg','#D97706','d'],['semester-os-lockup-mono.svg','#12151C','l']];
+const g=document.getElementById('g');
+for(const [f,w,t] of files){const c=document.createElement('div');c.className='c '+(t||(Math.random()<0?'':'l'));c.innerHTML=`<img src="${f}" width="${w}"><small>${f} @${w}</small>`;g.appendChild(c)}
+Promise.all(inline.map(([f,col,t])=>fetch(f).then(r=>r.text()).then(s=>{const c=document.createElement('div');c.className='c '+t;c.style.color=col;c.innerHTML=s.replace(/width="\d+" height="\d+"/,'width="110"')+`<small>${f}</small>`;g.appendChild(c)})));
+</script>

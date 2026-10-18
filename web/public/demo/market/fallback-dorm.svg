@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" role="img" aria-label="Dorm gear">
+<defs><filter id="b" x="-20%" y="-50%" width="140%" height="200%"><feGaussianBlur stdDeviation="9"/></filter></defs>
+<rect width="640" height="480" fill="#FFE4E6"/>
+<circle cx="520" cy="90" r="120" fill="#FECDD3" opacity=".55"/>
+<circle cx="90" cy="420" r="90" fill="#FECDD3" opacity=".4"/>
+<ellipse cx="320" cy="412" rx="190" ry="20" fill="#0F172A" opacity=".16" filter="url(#b)"/>
+<g transform="translate(320 260) scale(1.08) translate(-320 -260)"><g transform="translate(-70 0) scale(0.8)"><rect x="240" y="380" width="150" height="22" rx="11" fill="#334155" /><rect x="309" y="190" width="12" height="192" rx="6" fill="#475569" /><path d="M315 200 L420 130" fill="none" stroke="#475569" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" /><path d="M395 80 L470 150 L380 160 Z" fill="#F59E0B" /><path d="M410 160 L470 150 L520 330 L330 330 Z" fill="#FDE68A" opacity=".45"/><circle cx="405" cy="150" r="10" fill="#fff" opacity=".9"/></g><g transform="translate(190 40) scale(0.62)"><rect x="215" y="70" width="210" height="330" rx="22" fill="#94A3B8" /><rect x="225" y="80" width="190" height="100" rx="14" fill="#F1F5F9" /><rect x="225" y="190" width="190" height="200" rx="14" fill="#F8FAFC" /><rect x="238" y="110" width="8" height="40" rx="4" fill="#94A3B8" /><rect x="238" y="220" width="8" height="60" rx="4" fill="#94A3B8" /><rect x="215" y="182" width="210" height="6" rx="0" fill="#94A3B8" /><rect x="250" y="390" width="22" height="14" rx="4" fill="#64748B" /><rect x="368" y="390" width="22" height="14" rx="4" fill="#64748B" /></g></g>
+</svg>

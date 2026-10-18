@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Semester OS deck layouts</title>
+<link rel="stylesheet" href="deck.css">
+<style>
+  body { background: #05070A; margin: 0; padding: 24px; font-family: system-ui; }
+  .sheet { display: grid; grid-template-columns: repeat(3, 640px); gap: 24px; }
+  .cell { width: 640px; height: 360px; overflow: hidden; border-radius: 8px; position: relative; outline: 1px solid #262B35; }
+  .cell .slide { transform: scale(0.3333); transform-origin: 0 0; }
+  .cap { position: absolute; left: 8px; bottom: 6px; z-index: 5; font: 11px ui-monospace, monospace; color: #fff; background: rgba(0,0,0,.6); padding: 2px 6px; border-radius: 4px; }
+</style></head>
+<body><div class="sheet">
+
+<!-- 1 COVER -->
+<div class="cell"><span class="cap">1 cover</span>
+<section class="slide center" style="gap:56px">
+  <img src="../logo/semester-os-lockup-on-dark.svg" style="height:200px" alt="Semester OS">
+  <p class="subtitle" style="text-align:center">Your college chief-of-staff</p>
+  <div class="row" id="robots-cover"></div>
+  <div class="footer"><span>HackBama_01 · Track 1 · Multi-Campus Marketplace</span><span>Team name</span></div>
+</section></div>
+
+<!-- 2 SECTION DIVIDER -->
+<div class="cell"><span class="cap">2 section</span>
+<section class="slide" style="justify-content:center;gap:28px">
+  <span class="eyebrow">Part 02</span><h1 class="title title--xl">The idea nobody tried</h1>
+  <p class="subtitle">The syllabus tells the app what you need.</p>
+  <div class="footer"><span>Semester OS</span><span>02</span></div>
+</section></div>
+
+<!-- 3 STATEMENT -->
+<div class="cell"><span class="cap">3 statement</span>
+<section class="slide" style="justify-content:center">
+  <span class="eyebrow">The insight</span>
+  <h1 class="title" style="font-size:112px;max-width:1500px">You never browse. Your classes already know what you need.</h1>
+  <div class="footer"><span>Semester OS</span><span>03</span></div>
+</section></div>
+
+<!-- 4 TITLE + BULLETS -->
+<div class="cell"><span class="cap">4 title + bullets</span>
+<section class="slide">
+  <span class="eyebrow">What it does</span><h1 class="title">One agent per class</h1>
+  <ul class="points grow" style="justify-content:center"><li>Reads the syllabus and builds deadlines, books and a tutor</li><li>Remembers you, with notes you can read and delete</li><li>Checks Blackboard and answers from your materials</li></ul>
+  <div class="footer"><span>Semester OS</span><span>04</span></div>
+</section></div>
+
+<!-- 5 TWO COLUMN -->
+<div class="cell"><span class="cap">5 two columns</span>
+<section class="slide">
+  <span class="eyebrow">Before / after</span><h1 class="title">From juggling to one place</h1>
+  <div class="cols-2 grow"><div class="card"><h3>Today</h3><p>Five apps, three calendars, a PDF per class.</p></div><div class="card" style="border-color:var(--accent)"><h3>Semester OS</h3><p>Drop the syllabi. Everything else builds itself.</p></div></div>
+  <div class="footer"><span>Semester OS</span><span>05</span></div>
+</section></div>
+
+<!-- 6 BIG NUMBERS -->
+<div class="cell"><span class="cap">6 big numbers</span>
+<section class="slide">
+  <span class="eyebrow">Proof it works</span><h1 class="title">Built to scale to any campus</h1>
+  <div class="cols-3 grow" style="align-items:center"><div><div class="big-number">2,328</div><p class="body body--muted">US .edu schools work on day one</p></div><div><div class="big-number">0</div><p class="body body--muted">schools added by hand</p></div><div><div class="big-number">8</div><p class="body body--muted">class colours, all AA contrast</p></div></div>
+  <div class="footer"><span>Semester OS</span><span>06</span></div>
+</section></div>
+
+<!-- 7 AGENT ROSTER -->
+<div class="cell"><span class="cap">7 agent roster</span>
+<section class="slide">
+  <span class="eyebrow">The agents</span><h1 class="title">A chief of staff and a tutor per class</h1>
+  <div class="cols-5 grow" id="roster" style="align-items:center"></div>
+  <div class="footer"><span>Semester OS</span><span>07</span></div>
+</section></div>
+
+<!-- 8 PHONE + TEXT -->
+<div class="cell"><span class="cap">8 phone mockup</span>
+<section class="slide">
+  <span class="eyebrow">On your phone</span>
+  <div class="row grow" style="align-items:center;gap:96px">
+    <div class="frame-phone"><div class="shot"></div></div>
+    <div style="flex:1;display:flex;flex-direction:column;gap:28px"><h1 class="title">Native on iPhone and Android</h1><ul class="points"><li>Swipe to finish a deadline</li><li>Haptics on every right answer</li><li>Add deadlines to your phone calendar</li></ul></div>
+  </div>
+  <div class="footer"><span>Semester OS</span><span>08</span></div>
+</section></div>
+
+<!-- 9 DESKTOP FULL -->
+<div class="cell"><span class="cap">9 desktop mockup</span>
+<section class="slide">
+  <div class="row"><div><span class="eyebrow">The class agent</span><h1 class="title" style="font-size:72px">Chat, materials, deadlines, memory</h1></div></div>
+  <div class="frame-desktop grow"><div class="bar"><i></i><i></i><i></i><span>mis430.agent</span></div><div class="shot"></div></div>
+  <div class="footer"><span>Semester OS</span><span>09</span></div>
+</section></div>
+
+<!-- 10 ARCHITECTURE (draw.io page) -->
+<div class="cell"><span class="cap">10 architecture</span>
+<section class="slide">
+  <span class="eyebrow">Architecture · 1 of 3</span><h1 class="title" style="font-size:64px">Every school is data, not code</h1>
+  <div class="diagram grow"><span style="color:#586071;font:32px system-ui">draw.io page exported as SVG goes here</span></div>
+  <div class="row caption"><span class="pill">Client</span><span class="pill">Edge</span><span class="pill">Compute</span><span class="pill">Data</span><span class="pill">AI</span></div>
+  <div class="footer"><span>Semester OS</span><span>10</span></div>
+</section></div>
+
+<!-- 11 ROADMAP -->
+<div class="cell"><span class="cap">11 timeline</span>
+<section class="slide">
+  <span class="eyebrow">What's next</span><h1 class="title">Roadmap</h1>
+  <div class="cols-3 grow" style="align-items:start"><div class="card"><span class="pill pill--solid">Now</span><h3 style="margin-top:20px">Live</h3><p>Syllabus agents, calendar, Blackboard feed, marketplace.</p></div><div class="card"><span class="pill">Next</span><h3 style="margin-top:20px">Canvas</h3><p>More LMS connectors.</p></div><div class="card"><span class="pill">Later</span><h3 style="margin-top:20px">Peer tutoring</h3><p>Classmates helping classmates.</p></div></div>
+  <div class="footer"><span>Semester OS</span><span>11</span></div>
+</section></div>
+
+<!-- 12 RUBRIC MAP -->
+<div class="cell"><span class="cap">12 criteria map</span>
+<section class="slide">
+  <span class="eyebrow">Judging criteria</span><h1 class="title">How we meet each one</h1>
+  <table class="map grow"><thead><tr><th>Criterion</th><th>What we built</th><th>Where to see it</th></tr></thead><tbody><tr><td>Multi-tenant</td><td>Schools are data; any .edu works</td><td>Sign up</td></tr><tr><td>Campus-verified</td><td>.edu email plus code</td><td>Auth flow</td></tr><tr><td>Cross-campus</td><td>Network marketplace scope</td><td>Books</td></tr></tbody></table>
+  <div class="footer"><span>Semester OS</span><span>12</span></div>
+</section></div>
+
+<!-- 13 CLOSING -->
+<div class="cell"><span class="cap">13 closing</span>
+<section class="slide center" style="gap:44px">
+  <img src="../logo/semester-os-mark.svg" style="height:200px" alt="">
+  <h1 class="title">Try it now</h1>
+  <p class="subtitle" style="text-align:center">semesteros.example · github.com/example/semester-os</p>
+  <div class="row"><span class="pill pill--solid">Live demo</span><span class="pill">Source</span><span class="pill">Team</span></div>
+  <div class="footer"><span>Thank you</span><span>13</span></div>
+</section></div>
+
+</div>
+<script>
+// preview only: inline the robots so they take colour from the page
+const names = ['chief-of-staff', 'class-tutor', 'class-tutor', 'class-tutor', 'class-tutor'];
+const cols = ['#847EED', '#2FA399', '#DB7C10', '#E95878', '#28A57E'];
+const label = ['Chief of Staff', 'MIS 430', 'ACC 210', 'BIO 101', 'STAT 200'];
+Promise.all(names.map(n => fetch('../robots/robot-' + n + '.svg?v=1').then(r => r.text()))).then(svgs => {
+  const mk = (s, c, px) => s.replace(/width="96" height="96"/, `width="${px}" height="${px}"`).replace('<svg ', `<svg style="color:${c}" `);
+  document.getElementById('robots-cover').innerHTML = svgs.map((s, i) => mk(s, cols[i], 150)).join('');
+  document.getElementById('roster').innerHTML = svgs.map((s, i) => `<div style="text-align:center">${mk(s, cols[i], 240)}<p class="body" style="margin-top:12px">${label[i]}</p></div>`).join('');
+});
+</script>
+</body></html>

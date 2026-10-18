@@ -1,0 +1,26 @@
+__pycache__/
+*.pyc
+.venv/
+infra/.venv/
+cdk.out/
+cdk-outputs.json
+node_modules/
+web/dist/
+.env
+.DS_Store
+backend/vendor/
+
+# added by Planner when git was set up
+.expo/
+dist/
+*.tar.gz
+*.log
+.env.*
+*.pem
+*.key
+.idea/
+.vscode/
+Thumbs.db
+cdk.context.json
+
+cdk.out*/

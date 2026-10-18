@@ -1,0 +1,74 @@
+{
+  "manifest_version": 3,
+  "name": "Semester OS Connect (prototype)",
+  "version": "0.3.0",
+  "description": "Send your Blackboard syllabi to your own Semester OS account. Reads only while you watch. Never your password.",
+  "permissions": [
+    "storage",
+    "activeTab",
+    "scripting",
+    "alarms",
+    "webRequest"
+  ],
+  "host_permissions": [
+    "https://ualearn.blackboard.com/*",
+    "https://<deployed-host-1>/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "Semester OS Connect",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://ualearn.blackboard.com/ultra/*"
+      ],
+      "js": [
+        "main_hook.js"
+      ],
+      "run_at": "document_start",
+      "world": "MAIN"
+    },
+    {
+      "matches": [
+        "https://ualearn.blackboard.com/ultra/*",
+        "https://ualearn.blackboard.com/webapps/*"
+      ],
+      "js": [
+        "common.js",
+        "parse.js",
+        "bb.js"
+      ],
+      "run_at": "document_idle"
+    },
+    {
+      "matches": [
+        "https://<deployed-host-1>/*"
+      ],
+      "js": [
+        "common.js",
+        "parse.js",
+        "site.js"
+      ],
+      "run_at": "document_start"
+    }
+  ],
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'"
+  },
+  "optional_host_permissions": [
+    "https://*.blackboard.com/*",
+    "https://*.blackboardcdn.com/*",
+    "https://*.amazonaws.com/*",
+    "https://docs.google.com/*",
+    "https://drive.google.com/*",
+    "https://*.googleusercontent.com/*",
+    "https://onedrive.live.com/*",
+    "https://1drv.ms/*",
+    "https://*.sharepoint.com/*",
+    "https://*.officeapps.live.com/*"
+  ]
+}
